@@ -1,0 +1,32 @@
+---
+title: "SEKI"
+author: "Ethan"
+date: "3/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+library(tidyverse)
+library(janitor)
+library(stringr)
+library(sjmisc)
+library(readr)
+
+
+```
+
+## R Data
+
+```{r dataread, message=FALSE, warning=FALSE}
+
+raw <- read_csv("data/raw/SEKI Data Mar 16.csv")
+raw <- clean_names(raw)
+
+question_numbers <- colnames(raw[,18:365])
+
+raw <- raw %>% row_to_names(row = 1) 
+raw <- raw[-1,]
+```
