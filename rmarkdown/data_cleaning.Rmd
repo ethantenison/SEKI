@@ -20,13 +20,315 @@ library(readr)
 
 ## R Data
 
-```{r dataread, message=FALSE, warning=FALSE}
+```{r raw, message=FALSE, warning=FALSE}
 
 raw <- read_csv("data/raw/SEKI Data Mar 16.csv")
-raw <- clean_names(raw)
+```
 
-question_numbers <- colnames(raw[,18:365])
 
-raw <- raw %>% row_to_names(row = 1) 
-raw <- raw[-1,]
+```{r datacleaning, message=FALSE, warning=FALSE}
+
+
+
+df <- clean_names(raw)
+
+question_numbers <- colnames(df[, 18:365])
+
+df <- df %>% row_to_names(row = 1)
+df <- df[-1,]
+
+partnerquestions <- df[, 18:365]
+firstquestion <- df[, 1:17]
+partnerquestions <- colnames(partnerquestions)
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "Generally speaking and thinking of a recent and typical fiscal year, ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "(financial, time, labor, etc.) are allocated to these fire-related issues:",
+        replacement = "are allocated to",
+        x = t,
+        fixed = TRUE
+      )
+  )
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "across the PACE\n\n\n\nBelow, you will see a list of California State and Federal agencies that work within and across the Sequoia & Kings Canyon (SEKI) geography of interest. \n\n\n\nPlease consider with whom you go to fire-related meetings, receive or share advice or information, or implement projects within or across the PACE. Select all that apply. - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "Among the list below, please consider with whom you go to fire-related meetings, receive or share advice or information, or implement projects within or across the PACE. Select all that apply.",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "Continued: Information sharing and collaboration networks across the PACE\n\n\n\nBelow, you will see a list of agencies and ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "\nCommunication (we make sure partnering entities know what we're doing), \n\nCoordination (we make sure partnering entities know what we're doing, consult them in planning, and try to schedule our independent activities to achieve synergies), and \n\nCollaboration (we communicate and plan together, and try to share resources where possible, within constraints imposed by laws or regulations). -",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "\nCommunication (we make sure partnering entities know what we're doing), \n\nCoordination\n (we make sure partnering entities know what we're doing, consult them \nin planning, and try to schedule our independent activities to achieve \nsynergies), and \n\nCollaboration\n (we communicate and plan together, and try to share resources where \npossible, within constraints imposed by laws or regulations). -",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "The record-setting 2020 California wildfire season included nearly \n10,000 fires, the largest recorded wildfire in the state, and the most \nacres burned in a season (over 4.2 million acres). \n\n",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "Section 2: Information sharing and collaboration networks ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "organizations that don't have a defined jurisdiction in the SEKI PACE, but may be a part of your network.  - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "Continued: Information sharing and collaboration networks across the PACE\n\n\n\nPlease list additional organizations/groups below. - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "Indicate which fire management issue(s) is the focus of your interactions: - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+
+concatquestions <- paste(question_numbers, partnerquestions)
+partnerquestions <- df[, 18:365]
+colnames(partnerquestions) <- concatquestions
+df <- bind_cols(firstquestion, partnerquestions)
+
+df <- df[-c(1:17, 20:30, 68)]
+
+df$network_level <- ""
+
+df <- df %>% rename("ego" = "q1_2 What is the name of the agency or organization you are completing this survey on behalf of? Please be as specific as possible (e.g., Bishop Field Office of Bureau of Land Management)"
+  ) 
+
+```
+
+
+
+
+```{r egofiing, message=FALSE, warning=FALSE}
+
+
+df_long <- df_long %>% tidyr::pivot_longer(cols = c(3:49),
+                                           names_to = "alter",
+                                           values_to = "function") %>% mutate(
+                                             communication = 0,
+                                             ecology = 0,
+                                             education = 0,
+                                             mapping = 0,
+                                             operations = 0,
+                                             air_quality = 0,
+                                             mechanical_treatments = 0,
+                                             prescribed_fire = 0,
+                                             restoration = 0
+                                             
+                                           ) %>%  select(
+                                             ego,
+                                             alter,
+                                             `function`,
+                                             network_level,
+                                             communication,
+                                             ecology,
+                                             education,
+                                             mapping,
+                                             operations,
+                                             air_quality,
+                                             mechanical_treatments,
+                                             prescribed_fire,
+                                             restoration,
+                                             everything()
+                                           ) %>% drop_na(`function`)
+
+df_long$network_level[startsWith(df_long$alter, "q2_1")] <- "SEKI - Defined"
+df_long$network_level[startsWith(df_long$alter, "q2_2")] <- "SEKI - Undefined"
+df_long$network_level[startsWith(df_long$alter, "q2_4")] <- "SEKI - Other"
+
+
+#This regex removes the first word, or group of characters from string
+df_long$alter <- sub("\\S+\\s+", "", df_long$alter)
+
+df_long$alter[df_long$`function` != "Partner"] <- df_long$`function`
+
+#Fixing alters for those that are in the "Other" category 
+for(i in 1:length(df_long$`function`)) {
+  if (df_long$`function`[i] != "Partner") {
+    df_long$alter[i] <- df_long$`function`[i]
+  }
+}
+
+
+
+```
+
+
+
+```{r issues, message=FALSE, warning=FALSE}
+
+issues <- df %>% tidyr::pivot_longer(cols = c(50:96),
+                                          names_to = "alter",
+                                          values_to = "function")  %>% mutate(
+                                             communication = 0,
+                                             ecology = 0,
+                                             education = 0,
+                                             mapping = 0,
+                                             operations = 0,
+                                             air_quality = 0,
+                                             mechanical_treatments = 0,
+                                             prescribed_fire = 0,
+                                             restoration = 0) %>% select(
+                                             ego,
+                                             alter,
+                                             `function`,
+                                             communication,
+                                             ecology,
+                                             education,
+                                             mapping,
+                                             operations,
+                                             air_quality,
+                                             mechanical_treatments,
+                                             prescribed_fire,
+                                             restoration,
+                                             everything()
+                                           ) %>% drop_na(`function`)
+
+issues$alter <- sub("\\S+\\s+", "", issues$alter)
+
+
+for(i in 1:length(issues$`function`)) {
+  function_list <- as.list(strsplit(issues$`function`[i], ","))
+  
+  for (j in 1:length(function_list[[1]])) {
+    if (function_list[[1]][[j]] == "Fire ecology") {
+      issues$ecology[i] <- 1
+    }
+    else if (function_list[[1]][[j]] == "Fire communication") {
+      issues$communication[i] <- 1
+    }
+    else if (function_list[[1]][[j]] == "Fire communication and education") {
+      issues$communication[i] <- 1
+      issues$education[i] <- 1
+    }
+    else if (function_list[[1]][[j]] == "Fire education") {
+      issues$education[i] <- 1
+    }
+    else if (function_list[[1]][[j]] == "Fire mapping and GIS") {
+      issues$mapping[i] <- 1
+    }
+    else if (function_list[[1]][[j]] == "Fire operations and crews") {
+      issues$operations[i] <- 1
+    }
+    else if (function_list[[1]][[j]] == "Fire-related air quality") {
+      issues$air_quality[i] <- 1
+    }
+    else if (function_list[[1]][[j]] == "Fuels management-mechanical treatments") {
+      issues$mechanical_treatments[i] <- 1
+    }
+    else if (function_list[[1]][[j]] == "Fuels management-prescribed fire") {
+      issues$prescribed_fire[i] <- 1
+    }
+    else if (function_list[[1]][[j]] == "Post-fire mitigation and restoration") {
+      issues$restoration[i] <- 1
+    }
+  }
+  
+}
+
+
+
 ```
