@@ -285,6 +285,8 @@ df$network_level <- ""
 df <- df %>% rename("ego" = "q1_2 What is the name of the agency or organization you are completing this survey on behalf of? Please be as specific as possible (e.g., Bishop Field Office of Bureau of Land Management)"
   ) 
 
+
+
 ```
 
 
@@ -496,7 +498,7 @@ edge_data <- edge_data[!duplicated(edge_data[,c('ego', 'alter')]),]
 
 edge_data <- edge_data %>% select(ego, alter, network_level, everything()) %>% select(-c(`function`))
 
-
+write.csv(edge_data, "data/processed/edgelist.csv")
 ```
 
 
