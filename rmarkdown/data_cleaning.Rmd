@@ -185,6 +185,95 @@ partnerquestions <-
   )
 
 
+
+partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "How would you characterize your interaction with the following entities: ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+ partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "Please rate your level of satisfaction with the joint activities to increase the capacity to prepare for and respond to fire. Your answers are confidential. - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+
+ partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "Please rate your level of satisfaction \nwith the range of actions taken by partnering with this entity to \nincrease the capacity to prepare and respond to fire (your answers are confidential). - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+ 
+  partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "Generally speaking, the information provided by the following organizations is: - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+  
+   partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "I estimate the likelihood of fire spreading to other jurisdictions from ______ is: - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )
+ 
+   partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "How confident are you in the planning and operational capacity of the jurisdiction to prevent ignition or limit the spread of a large fire? - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )   
+   
+   
+
+  
+     partnerquestions <-
+  sapply(
+    X = partnerquestions,
+    FUN = function(t)
+      gsub(
+        pattern = "How relevant was each partnership in dealing with the conditions in 2020? - ",
+        replacement = "",
+        x = t,
+        fixed = TRUE
+      )
+  )   
+
+   
 concatquestions <- paste(question_numbers, partnerquestions)
 partnerquestions <- df[, 18:365]
 colnames(partnerquestions) <- concatquestions
@@ -205,7 +294,7 @@ df <- df %>% rename("ego" = "q1_2 What is the name of the agency or organization
 ```{r egofiing, message=FALSE, warning=FALSE}
 
 
-df_long <- df_long %>% tidyr::pivot_longer(cols = c(3:49),
+df_long <- df %>% tidyr::pivot_longer(cols = c(3:49),
                                            names_to = "alter",
                                            values_to = "function") %>% mutate(
                                              communication = 0,
@@ -243,14 +332,10 @@ df_long$network_level[startsWith(df_long$alter, "q2_4")] <- "SEKI - Other"
 #This regex removes the first word, or group of characters from string
 df_long$alter <- sub("\\S+\\s+", "", df_long$alter)
 
-df_long$alter[df_long$`function` != "Partner"] <- df_long$`function`
 
-#Fixing alters for those that are in the "Other" category 
-for(i in 1:length(df_long$`function`)) {
-  if (df_long$`function`[i] != "Partner") {
-    df_long$alter[i] <- df_long$`function`[i]
-  }
-}
+network_level <- select(df_long, ego, alter, `function`, network_level)
+
+
 
 
 
@@ -261,36 +346,37 @@ for(i in 1:length(df_long$`function`)) {
 ```{r issues, message=FALSE, warning=FALSE}
 
 issues <- df %>% tidyr::pivot_longer(cols = c(50:96),
-                                          names_to = "alter",
-                                          values_to = "function")  %>% mutate(
-                                             communication = 0,
-                                             ecology = 0,
-                                             education = 0,
-                                             mapping = 0,
-                                             operations = 0,
-                                             air_quality = 0,
-                                             mechanical_treatments = 0,
-                                             prescribed_fire = 0,
-                                             restoration = 0) %>% select(
-                                             ego,
-                                             alter,
-                                             `function`,
-                                             communication,
-                                             ecology,
-                                             education,
-                                             mapping,
-                                             operations,
-                                             air_quality,
-                                             mechanical_treatments,
-                                             prescribed_fire,
-                                             restoration,
-                                             everything()
-                                           ) %>% drop_na(`function`)
+                                     names_to = "alter",
+                                     values_to = "function")  %>% mutate(
+                                       communication = 0,
+                                       ecology = 0,
+                                       education = 0,
+                                       mapping = 0,
+                                       operations = 0,
+                                       air_quality = 0,
+                                       mechanical_treatments = 0,
+                                       prescribed_fire = 0,
+                                       restoration = 0
+                                     ) %>% select(
+                                       ego,
+                                       alter,
+                                       `function`,
+                                       communication,
+                                       ecology,
+                                       education,
+                                       mapping,
+                                       operations,
+                                       air_quality,
+                                       mechanical_treatments,
+                                       prescribed_fire,
+                                       restoration,
+                                       everything()
+                                     ) %>% drop_na(`function`)
 
 issues$alter <- sub("\\S+\\s+", "", issues$alter)
 
 
-for(i in 1:length(issues$`function`)) {
+for (i in 1:length(issues$`function`)) {
   function_list <- as.list(strsplit(issues$`function`[i], ","))
   
   for (j in 1:length(function_list[[1]])) {
@@ -329,6 +415,87 @@ for(i in 1:length(issues$`function`)) {
   
 }
 
+issues <- issues %>% select(
+  ego,
+  alter,
+  communication,
+  ecology,
+  education,
+  mapping,
+  operations,
+  air_quality,
+  mechanical_treatments,
+  prescribed_fire,
+  restoration
+)
+
+strength <- df %>% select(ego, 97:143) %>% pivot_longer(
+  cols = c(
+    `q2_6_x25  BLM-Bishop Field Office`:`null_x25_2  Group #10`
+  ),
+  names_to = "alter",
+  values_to = "strength"
+) %>% select(ego, alter, strength) %>% drop_na(strength)
+
+strength$alter <- sub("\\S+\\s+", "", strength$alter)
+
+
+satisfaction <- df %>% select(ego, 144:190) %>% pivot_longer(
+  cols = c(`q3_1_x25 BLM-Bishop Field Office`:`null_x25_4 Group #10`),
+  names_to = "alter",
+  values_to = "satisfaction"
+) %>% select(ego, alter, satisfaction) %>% drop_na(satisfaction)
+
+satisfaction$alter <- sub("\\S+\\s+", "", satisfaction$alter)
+
+
+quality <- df %>% select(ego, 191:237) %>% pivot_longer(
+  cols = c(`null_x25_5 BLM-Bishop Field Office`:`null_x25_7 Group #10`),
+  names_to = "alter",
+  values_to = "quality"
+) %>% select(ego, alter, quality) %>% drop_na(quality)
+
+quality$alter <- sub("\\S+\\s+", "", quality$alter)
+
+
+fire_spread <- df %>% select(ego, 238:253) %>% pivot_longer(
+  cols = c(`null_x25_8 BLM-Bishop Field Office`:`null_x41_1 USFS-Sierra National Forest-High Sierra`),
+  names_to = "alter",
+  values_to = "fire_spread"
+) %>% select(ego, alter, fire_spread) %>% drop_na(fire_spread)
+
+fire_spread$alter <- sub("\\S+\\s+", "", fire_spread$alter)
+
+operational_capacity <- df %>% select(ego, 254:269) %>% pivot_longer(
+  cols = c(`null_x25_9 BLM-Bishop Field Office`:`null_x41_2 USFS-Sierra National Forest-High Sierra`),
+  names_to = "alter",
+  values_to = "operational_capacity"
+) %>% select(ego, alter, operational_capacity) %>% drop_na(operational_capacity)
+
+operational_capacity$alter <- sub("\\S+\\s+", "", operational_capacity$alter)
+
+relevance <- df %>% select(ego, 270:306) %>% pivot_longer(
+  cols = c(`null_x25_10 BLM-Bishop Field Office`:`q141_x48 Yokut (Native American Indigenous Peoples)`),
+  names_to = "alter",
+  values_to = "relevance"
+) %>% select(ego, alter, relevance) %>% drop_na(relevance)
+
+relevance$alter <- sub("\\S+\\s+", "", relevance$alter)
+
+
+edge_data <-
+  left_join(issues, strength, by = c("ego", "alter")) %>% left_join(., satisfaction, by = c("ego", "alter")) %>% left_join(., quality, by = c("ego", "alter")) %>% left_join(., fire_spread, by = c("ego", "alter")) %>% left_join(., operational_capacity, by = c("ego", "alter")) %>% left_join(., relevance, by = c("ego", "alter")) %>% left_join(., network_level, by = c("ego", "alter")) 
+
+edge_data <- edge_data[!duplicated(edge_data[,c('ego', 'alter')]),] 
+
+ #Fixing alters for those that are in the "Other" category 
+ for(i in 1:length(edge_data$`function`)) {
+   if (edge_data$`function`[i] != "Partner") {
+     edge_data$alter[i] <- edge_data$`function`[i]
+   }
+ }
+
+edge_data <- edge_data %>% select(ego, alter, network_level, everything()) %>% select(-c(`function`))
 
 
 ```
