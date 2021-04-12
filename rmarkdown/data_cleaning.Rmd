@@ -15,7 +15,6 @@ library(stringr)
 library(sjmisc)
 library(readr)
 
-
 ```
 
 ## R Data
@@ -498,4 +497,71 @@ edge_data <- edge_data[!duplicated(edge_data[,c('ego', 'alter')]),]
 edge_data <- edge_data %>% select(ego, alter, network_level, everything()) %>% select(-c(`function`))
 
 
+```
+
+
+```{r visnetwork}
+library(igraph)
+library(visNetwork)
+
+g1<-graph_from_data_frame(d=edge_data,directed=TRUE) 
+
+#Degree in 
+inDegree<-igraph::degree(g1,mode="in")
+outDegree<-igraph::degree(g1,mode="out")
+TotalDegree<-as.data.frame(igraph::degree(g1))
+betweenness<-igraph::betweenness(g1, v = V(g1), directed = TRUE, weights = NULL,
+  nobigint = TRUE, normalized = TRUE)
+inCloseness<-igraph::closeness(g1, vids = V(g1), mode = c("in"),normalized = TRUE)
+outCloseness<-igraph::closeness(g1, vids = V(g1), mode = c("out"),normalized = TRUE)
+#eigen<-evcent(m1,g=1,gmode = "digraph",rescale=TRUE, ignore.eval=TRUE)
+#removed eigen from this DF_Centrality
+DF_Centrality<-as.data.frame(cbind(rownames(TotalDegree),inDegree,outDegree,TotalDegree,betweenness,inCloseness,outCloseness))
+rownames(DF_Centrality)<-NULL
+DF_Centrality<-as.data.frame(DF_Centrality)
+colnames(DF_Centrality)[1]<-"name"
+colnames(DF_Centrality)[4]<-"TotalDegree"
+
+DF_Centrality <- DF_Centrality %>%  select(name, TotalDegree) %>% rename("id" = "name", "size" = "TotalDegree" )
+
+
+gvis<-toVisNetworkData(g1)
+
+nodes <- gvis$nodes
+nodes <- nodes %>% left_join(DF_Centrality) %>% mutate(color = "#EE4B2B")
+
+SEKI_network <-
+  visNetwork(
+    nodes,
+    gvis$edges,
+    main = "SEKI PACE Network",
+    width = "100%",
+    height = "850px"
+  ) %>%
+  visEdges(
+    smooth = T,
+    arrows = list(
+      to = list(enabled = TRUE, scaleFactor = .5),
+      width = 3
+    ),
+    color = list(highlight = "black")
+  ) %>% 
+  visNodes(color = list(
+    background = "white",
+    border = "black",
+    highlight = list(background = "#A9A9A9", border = "black"),
+    hover = list(background = "#A9A9A9", border = "black")
+  )) %>%
+  visPhysics(stabilization = FALSE)  %>%
+  visIgraphLayout(
+    smooth = FALSE,
+    physics = FALSE,
+    layout = "layout_with_fr",
+    randomSeed = 27
+  ) %>%
+  visInteraction(navigationButtons = TRUE)
+
+
+SEKI_network
+  
 ```
