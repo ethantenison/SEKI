@@ -21,7 +21,7 @@ library(readr)
 
 ```{r raw, message=FALSE, warning=FALSE}
 
-raw <- read_csv("data/raw/SEKI Data Mar 16.csv")
+raw <- read_csv("data/raw/SEKI Data June 7.csv")
 ```
 
 
