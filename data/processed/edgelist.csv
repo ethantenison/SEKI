@@ -292,3 +292,20 @@
 "291","Sequoia and Kings National Park","US Geological Survey","SEKI - Undefined",0,1,0,0,0,0,0,0,0,"Collaboration",NA,NA,NA,NA,NA
 "292","Sequoia and Kings National Park","Western Mono (Native American Indigenous Peoples)","SEKI - Undefined",1,0,1,0,0,0,0,0,0,"Communication",NA,NA,NA,NA,NA
 "293","Sequoia and Kings National Park","Yokut (Native American Indigenous Peoples)","SEKI - Undefined",1,0,1,0,0,0,0,0,0,"Communication",NA,NA,NA,NA,NA
+"294","Central California BLM","BLM-Bishop Field Office","SEKI - Defined",1,1,1,1,1,1,1,1,1,"Collaboration","Somewhat satisfied","Somewhat good","Moderate","Somewhat confident","Extremely relevant"
+"295","Central California BLM","BLM-California Desert Interagency Fire Program","SEKI - Defined",1,0,0,0,1,1,0,0,0,"Collaboration","Somewhat satisfied","Somewhat good","Moderate","Somewhat confident","Somewhat relevant"
+"296","Central California BLM","BLM-Central California District","SEKI - Defined",1,1,1,1,1,1,1,1,1,"Collaboration","Extremely satisfied","Extremely good","Moderate","Somewhat confident","Extremely relevant"
+"297","Central California BLM","Cal Fire-Fresno Kings","SEKI - Defined",1,0,0,0,1,1,0,0,0,"Coordination","Somewhat satisfied","Somewhat good","Moderate","Somewhat confident","Extremely relevant"
+"298","Central California BLM","Cal Fire-San Bernardino","SEKI - Defined",1,0,0,0,1,1,0,0,0,"Coordination","Somewhat satisfied","Somewhat good","Moderate","Somewhat confident","Extremely relevant"
+"299","Central California BLM","NPS-Sequoia","SEKI - Defined",1,0,0,0,1,1,0,0,0,"Coordination","Somewhat satisfied","Somewhat good","Moderate","Somewhat confident","Somewhat relevant"
+"300","Central California BLM","USFS-Inyo National Forest-Mt. Whitney","SEKI - Defined",1,0,0,0,1,1,0,0,0,"Coordination","Somewhat satisfied","Somewhat good","Moderate","Somewhat confident","Somewhat relevant"
+"301","Central California BLM","USFS-Sequoia National Forest-Kern River","SEKI - Defined",1,0,0,0,1,1,0,0,0,"Coordination","Somewhat satisfied","Somewhat good","Moderate","Somewhat confident","Somewhat relevant"
+"302","Central California BLM","USFS-Sequoia National Forest-Western Divide","SEKI - Defined",1,0,0,0,1,1,0,0,0,"Coordination","Somewhat satisfied","Somewhat good","Moderate","Somewhat confident","Somewhat relevant"
+"303","Central California BLM","California Air Resources Board","SEKI - Undefined",0,0,0,0,0,1,0,1,0,"Coordination","Somewhat dissatisfied","Somewhat useful",NA,NA,"Extremely relevant"
+"304","Central California BLM","California Forest Management Task Force","SEKI - Undefined",0,0,0,0,0,0,1,0,1,"Communication","Somewhat satisfied","Somewhat not useful",NA,NA,"Somewhat relevant"
+"305","Central California BLM","Southern Sierra Prescribed Fire Council","SEKI - Undefined",0,0,1,0,0,0,1,1,0,"Communication","Somewhat satisfied","Somewhat useful",NA,NA,"Slightly relevant"
+"306","Central California BLM","The Nature Conservancy","SEKI - Undefined",0,1,0,0,0,0,1,1,0,"Communication","Somewhat dissatisfied","Somewhat useful",NA,NA,"Slightly relevant"
+"307","Central California BLM","USDA Natural Resource Conservation Service (NRCS)","SEKI - Undefined",0,0,0,0,0,0,0,0,1,"Communication","Somewhat satisfied","Somewhat useful",NA,NA,"Slightly relevant"
+"308","Central California BLM","USFS-Sequoia National Forest Supervisors Office","SEKI - Undefined",1,0,1,0,1,0,0,0,0,"Communication","Somewhat satisfied","Somewhat useful",NA,NA,"Somewhat relevant"
+"309","Central California BLM","US Geological Survey","SEKI - Undefined",1,0,1,0,0,0,0,0,0,"Communication","Somewhat satisfied","Somewhat useful",NA,NA,"Slightly relevant"
+"310","Central California BLM","Sierra Nevada Conservancy","SEKI - Other",0,0,0,0,0,0,1,1,0,"Collaboration","Extremely satisfied","Extremely useful",NA,NA,NA
