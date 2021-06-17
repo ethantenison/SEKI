@@ -1,8 +1,19 @@
 ---
 title: "SEKI Data Analysis"
 author: "Ethan Tenison"
-date: "6/16/2021"
-output: html_document
+date: "`r format(Sys.Date(), '%B %d, %Y') `"
+output:
+  bookdown::html_document2:
+    toc: yes
+    toc_float: yes
+    toc_depth: 3
+    collapsed: no
+    number_sections: yes
+    fig_caption: yes
+always_allow_html: yes
+editor_options:
+  chunk_output_type: console
+runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
@@ -12,22 +23,181 @@ knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 library(tidyverse) #Data cleaning and visualizations
 library(janitor) #Basic data preprocessing 
 library(readr) #Reading data from various formats 
-
-
-node_attri <- read_csv("data/processed/SEKI Node Attributes.csv")
-edges <- read_csv("data/processed/SEKIedgelist.csv")
-```
-
-Visualizing the preliminary dataset using `Visnetwork`.
-
-```{r message=FALSE, warning=FALSE}
+library(fontawesome) #Icons
 
 library(visNetwork) #visualizing network data using html 
 library(igraph) #Barebones network analysis package 
 
-g1<-graph_from_data_frame(d=edges,directed=TRUE) 
+```
 
-gvis<-toVisNetworkData(g1)
 
-visNetwork(gvis$nodes, gvis$edges)
+# Introduction
+
+
+# Full Network
+
+Visualizing the preliminary dataset using `Visnetwork`is simple given the dataset has already been cleaned. 
+
+```{r message=FALSE, warning=FALSE}
+
+
+
+#Reading in the data
+node_attri <-
+  read_csv("data/processed/SEKI Node Attributes.csv") |> clean_names()
+edges <-
+  read_csv("data/processed/SEKIedgelist.csv") |> clean_names()
+
+#Converting to network type
+g1 <- graph_from_data_frame(d = edges, directed = TRUE)
+
+gvis <- toVisNetworkData(g1)
+
+nodes <- gvis$nodes
+nodes <- nodes |> mutate(color = "#EE4B2B")
+
+network <-
+  visNetwork(nodes,
+             gvis$edges,
+             main = "SEKI PACE Network",
+             width = "100%",
+             height = "850px") |>
+  visEdges(
+    smooth = T,
+    arrows = list(
+      to = list(enabled = TRUE, scaleFactor = .5),
+      width = 3
+    ),
+    color = list(highlight = "black")
+  ) |>
+  visNodes(color = list(
+    background = "white",
+    border = "black",
+    highlight = list(background = "#A9A9A9", border = "black"),
+    hover = list(background = "#A9A9A9", border = "black")
+  )) |>
+  visPhysics(stabilization = FALSE)  |>
+  visIgraphLayout(
+    smooth = FALSE,
+    physics = FALSE,
+    layout = "layout_with_fr",
+    randomSeed = 27
+  ) |>
+  visInteraction(navigationButtons = TRUE) 
+
+network 
+```
+
+# Land Management Only 
+
+Next we're going to look at only those entities that have a defined geographic location. In addition, the size is set to equal the total number of connections. By far, the `Inyo National Forest Supervisors Office` has the most connections at 41. 
+
+```{r landmgr_only}
+
+landmgr <- node_attri |>
+  select(name, landmgr) |>
+  filter(landmgr == 1)
+
+joined <- edges |>
+  left_join(landmgr, by = c("ego" = "name")) |>
+  filter(landmgr == 1)
+
+#Converting to network type
+g1 <- graph_from_data_frame(d = joined, directed = TRUE)
+TotalDegree <- igraph::degree(g1)
+gvis <- toVisNetworkData(g1)
+
+#nodes
+nodes <- gvis$nodes
+nodes <- nodes |>
+  left_join(node_attri, by = c("id" = "name"))
+nodes$value <- TotalDegree[match(nodes$id, names(TotalDegree))]
+nodes$label <- paste(nodes$id, "\n", nodes$value)
+nodes$color[nodes$orgtype == "State Agency"] <- "blue"
+nodes$color[nodes$orgtype == "Federal Agency"] <- "red"
+nodes$color[nodes$orgtype == "Tribal"] <- "green"
+nodes$color[nodes$orgtype == "NGO"] <- "yellow"
+nodes$color[nodes$orgtype == "Local agency"] <- "orange"
+nodes$color[nodes$orgtype == "Private"] <- "purple"
+nodes$color[is.na(nodes$orgtype)] <- "gray"
+
+
+network <-
+  visNetwork(nodes,
+             gvis$edges,
+             main = "SEKI PACE Network (Landbased only)",
+             width = "100%",
+             height = "850px") |>
+  visEdges(
+    smooth = T,
+    arrows = list(
+      to = list(enabled = TRUE, scaleFactor = .5),
+      width = 3
+    ),
+    color = list(highlight = "black")
+  ) |>
+  visNodes(color = list(
+    background = "white",
+    border = "black",
+    highlight = list(background = "#A9A9A9", border = "black"),
+    hover = list(background = "#A9A9A9", border = "black")
+  )) |>
+  visPhysics(stabilization = FALSE)  |>
+  visIgraphLayout(
+    smooth = FALSE,
+    physics = FALSE,
+    layout = "layout_with_fr",
+    randomSeed = 27
+  ) |>
+  visInteraction(navigationButtons = TRUE) |>
+  addFontAwesome(name = "font-awesome-visNetwork") |>
+  visLegend(
+    position = "left",
+    addNodes = list(
+      list(
+        label = "State Agency",
+        shape = "icon",
+        icon = list(code = "f111", size = 20, color = "blue")
+      ),
+      list(
+        label = "Federal Agency",
+        shape = "icon",
+        icon = list(code = "f111", size = 20, color = "red")
+      ),
+      list(
+        label = "Tribal",
+        shape = "icon",
+        icon = list(code = "f111", size = 20, color = "green")
+      ),
+      list(
+        label = "NGO",
+        shape = "icon",
+        icon = list(code = "f111", size = 20, color = "yellow")
+      ),
+      list(
+        label = "Local Agency",
+        shape = "icon",
+        icon = list(code = "f111", size = 20, color = "orange")
+      ),
+      list(
+        label = "Private",
+        shape = "icon",
+        icon = list(code = "f111", size = 20, color = "purple")
+      ),
+      list(
+        label = "Unknown",
+        shape = "icon",
+        icon = list(code = "f111", size = 20, color = "gray")
+      )
+      
+    ),
+    useGroups = FALSE,
+    stepY = 50
+  )
+
+
+
+
+network 
+
 ```
