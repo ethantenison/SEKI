@@ -1,0 +1,70 @@
+name,landmgr,defined,Orgtype,,AgencyID,Acres,FireOcc,FirePtDensity,FireProbMean,EcoCentralityMean,EcoCentralitySD,EcoregionL3Majority,EcoregL3_PercSierraNevada,NLCDMajority,NLCD_PercForest,NLCD_PercShrub,CentroidLat,CentroidLon
+BLM-California Desert Interagency Fire Program,0,1,Federal Agency,,,,,,,,,,,,,,,
+CAL FIRE-San Bernardino/Inyo/Mono,1,1,State Agency,,CalFire,21418201.62,26,0.001213921,0.015095211,0.139582956,0.060154922,Mojave Basin and Range,0.013555687,Shrub/Scrub,0.01922424,0.77445324,35.6554985,-116.8199997
+Defenders of Wildlife,0,1,NGO,,,,,,,,,,,,,,,
+USFS-Inyo National Forest-Mt. Whitney,1,1,Federal Agency,,USFS,594693.244,2,0.003363078,0.148271035,0.104041346,0.034143867,Sierra Nevada,0.707016191,Shrub/Scrub,0.15070778,0.65855536,36.6147995,-118.1679993
+NPS-Sequoia and Kings,1,1,Federal Agency,,NPS,865877.9848,2,0.002309794,0.272386901,0.095744024,0.026104989,Sierra Nevada,0.994958233,Evergreen Forest,0.43177557,0.31399788,36.7117996,-118.586998
+NPS-Yosemite,0,1,Federal Agency,,,,,,,,,,,,,,,
+Sierra Forest Legacy,0,1,NGO,,,,,,,,,,,,,,,
+The Wilderness Society,0,1,NGO,,,,,,,,,,,,,,,
+Tulare Basin Watershed Partnership,0,1,NGO,,,,,,,,,,,,,,,
+US Geological Survey,0,1,Federal Agency,,,,,,,,,,,,,,,
+USFS-Inyo National Forest Supervisors Office,1,1,Federal Agency,,USFS,1869191.427,5,0.002674953,0.182543563,0.104288692,0.032389221,Sierra Nevada,0.549731197,Shrub/Scrub,0.23638343,0.63170787,37.2830009,-118.4850006
+USFS-Inyo National Forest-Mammoth,1,1,Federal Agency,,USFS,167275.2475,0,0,0.039859292,0.037662586,0.022692426,Sierra Nevada,0.537529451,Shrub/Scrub,0.11565543,0.39307116,37.6236992,-118.9830017
+USFS-Inyo National Forest-White Mountain,1,1,Federal Agency,,USFS,849963.7175,1,0.001176521,0.241450514,0.128018702,0.023565508,Central Basin and Range,0,Shrub/Scrub,0.41816462,0.55287783,37.4754982,-118.3880005
+USFS-Region 5 South Operations,0,1,Federal Agency,,,,,,,,,,,,,,,
+USFS-Sequoia National Forest Supervisors Office,0,1,Federal Agency,,,,,,,,,,,,,,,
+USFS-Sequoia National Forest-Giant Sequoia National Monument,1,1,Federal Agency,,USFS,1114766.622,27,0.024220316,0.338125508,0.072902366,0.020533722,Sierra Nevada,0.957607033,Evergreen Forest,0.69663937,0.23525138,36.0248985,-118.4980011
+USFS-Sequoia National Forest-Kern River,1,1,Federal Agency,,USFS,663351.3285,12,0.018089962,0.304158378,0.076024891,0.026704729,Sierra Nevada,0.856960089,Shrub/Scrub,0.28975601,0.58029958,35.7988014,-118.3659973
+BLM-Central California District,0,1,Federal Agency,,,,,,,,,,,,,,,
+BLM-Bishop Field Office,1,1,Federal Agency,,BLM,752069.9286,4,0.005318654,0.043012664,0.109610809,0.044421512,Central Basin and Range,0.024503842,Shrub/Scrub,0.05271125,0.77419312,37.5937996,-118.5930023
+California Air Resources Board,0,1,State Agency,,,,,,,,,,,,,,,
+California Forest Management Task Force,0,1,State Agency,,,,,,,,,,,,,,,
+The Nature Conservancy,0,1,NGO,,,,,,,,,,,,,,,
+USDA Natural Resource Conservation Service (NRCS),0,1,Federal Agency,,,,,,,,,,,,,,,
+USFS-Region 5 HQ,0,1,Federal Agency,,,,,,,,,,,,,,,
+Western Mono (Native American Indigenous Peoples),1,1,Tribal,,BIA,273.2766,0,0,0,0.020890829,0.004468418,Central Basin and Range,0,"Developed, Open Space",0,0.19788274,37.1590004,-118.2850037
+Yokut (Native American Indigenous Peoples),1,1,Tribal,,BIA,54003.85081,0,0,0.389107108,0.068419512,0.010608896,Central California Foothills and Coastal Mountains,0.4828733,Evergreen Forest,0.575507875,0.23922255,36.0318985,-118.7139969
+CAL FIRE-Fresno Kings,1,1,State Agency,,CalFire,4737146.792,12,0.00253317,0.106951671,0.050394846,0.040531036,Central California Valley,0.282858767,Cultivated Crops,0.15874731,0.13359822,36.6307983,-119.6809998
+Central Sierra Environmental Resource Center,0,0,NGO,,,,,,,,,,,,,,,
+Dinkey Collaborative,0,1,NGO,,,,,,,,,,,,,,,
+Save the Redwoods,0,1,NGO,,,,,,,,,,,,,,,
+Sierra Club,0,1,NGO,,,,,,,,,,,,,,,
+Southern Sierra Prescribed Fire Council,0,1,NGO,,,,,,,,,,,,,,,
+USFS-Sequoia National Forest-Hume Lake,1,1,Federal Agency,,USFS,183462.9731,2,0.010901382,0.443784837,0.076750553,0.024239056,Sierra Nevada,0.99029652,Evergreen Forest,0.81041742,0.16410542,36.7765999,-118.9349976
+USFS-Sequoia National Forest-Western Divide,1,1,Federal Agency,,USFS,337715.3798,14,0.041455026,0.428441177,0.072000494,0.020717581,Sierra Nevada,0.95004152,Evergreen Forest,0.696674797,0.23433137,36.1257019,-118.5820007
+USFS-Sierra National Forest Supervisors Office,1,1,Federal Agency,,USFS,1316335.918,10,0.007596845,0.402707358,0.078195526,0.030829784,Sierra Nevada,0.965338042,Evergreen Forest,0.68696258,0.22341518,37.2685013,-119.1869965
+USFS-Sierra National Forest-High Sierra,1,1,Federal Agency,,USFS,912075.9388,2,0.0021928,0.444089994,0.123315713,0.02547831,Sierra Nevada,0.998904273,Evergreen Forest,0.73175538,0.25782703,37.1744003,-119.0559998
+CAL FIRE-Tulare,1,1,State Agency,,CalFire,3099336.204,24,0.007743594,0.037300794,0.030955802,0.018698986,Central California Valley,0.041653109,Cultivated Crops,0.0485417,0.09847935,36.2201996,-118.8000031
+FWS-Los Banos,0,0,Federal Agency,,,,,,,,,,,,,,,
+Hetchy City of SF,0,0,Local agency,,,,,,,,,,,,,,,
+Mariposa APCD,0,0,Local agency,,,,,,,,,,,,,,,
+CAL FIRE-Madera Mariposa Merced,0,0,State Agency,,,,,,,,,,,,,,,
+PWR regional Staff,0,0,Federal Agency,,,,,,,,,,,,,,,
+SJ APCD,0,0,Local agency,,,,,,,,,,,,,,,
+STF,0,0,Local agency,,,,,,,,,,,,,,,
+American Forests,0,0,NGO,,,,,,,,,,,,,,,
+Fresno Audubon,0,0,NGO,,,,,,,,,,,,,,,
+Great Basin Institute,0,0,NGO,,,,,,,,,,,,,,,
+Highway 168 Fire Safe Council,0,0,NGO,,,,,,,,,,,,,,,
+Outdoor Alliance California,0,0,NGO,,,,,,,,,,,,,,,
+Sequoia Riverlands Trust,0,0,NGO,,,,,,,,,,,,,,,
+Unite the Parks,0,0,NGO,,,,,,,,,,,,,,,
+WildSpaces,0,0,NGO,,,,,,,,,,,,,,,
+Yosemite RCD,0,0,Local agency,,,,,,,,,,,,,,,
+BLM-Bakersfield,1,0,Federal Agency,,BLM,616370.5706,6,0.009734404,0.079974058,0.065786263,0.027547675,Central California Foothills and Coastal Mountains,0.341037966,Herbaceuous,0.08002774,0.41236953,35.4544983,-119.1449966
+Sierra Resource Conservation District,0,0,Local agency,,,,,,,,,,,,,,,
+UC Merced SNRI & ANR,0,0,State Agency,,,,,,,,,,,,,,,
+13 Mono/Inyo Co. Local Fire Departments,0,0,Local agency,,,,,,,,,,,,,,,
+Great Basin Unified APCD,0,0,Local agency,,,,,,,,,,,,,,,
+Inyo Co. Bd. of Sup'v.,0,0,Local agency,,,,,,,,,,,,,,,
+Inyo/Mono Co. Fire Safe Council,0,0,Local agency,,,,,,,,,,,,,,,
+Mono Co. Bd. of Sup'v.,0,0,Local agency,,,,,,,,,,,,,,,
+"NOAA Reno, Las Vegas, Hanford offices",0,0,Federal Agency,,,,,,,,,,,,,,,
+Plumas Corporation,0,0,Private,,,,,,,,,,,,,,,
+Friends of the Inyo,0,0,NGO,,,,,,,,,,,,,,,
+Mammoth Lakes FD,0,0,Local agency,,,,,,,,,,,,,,,
+Mono County VFD’s,0,0,Local agency,,,,,,,,,,,,,,,
+Army Corps of Engineers,0,0,Federal Agency,,,,,,,,,,,,,,,
+Kern County Fire,0,0,Local agency,,,,,,,,,,,,,,,
+Sierra Nevada Conservancy,0,0,NGO,,,,,,,,,,,,,,,

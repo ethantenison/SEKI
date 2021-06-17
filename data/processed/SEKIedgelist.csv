@@ -1,0 +1,298 @@
+ego,alter,network_level,communication,ecology,education,mapping,operations,air_quality,mechanical_treatments,prescribed_fire,restoration,strength,satisfaction,quality,fire_spread,operational_capacity,relevance
+BLM-California Desert Interagency Fire Program,BLM-Bishop Field Office,SEKI - Defined,0,0,0,0,1,0,0,0,0,Coordination,Somewhat satisfied,Extremely good,High,Somewhat confident,Extremely relevant
+BLM-California Desert Interagency Fire Program,BLM-Central California District,SEKI - Defined,1,0,1,1,1,0,1,1,1,Coordination,Somewhat satisfied,Extremely good,High,Somewhat confident,Extremely relevant
+BLM-California Desert Interagency Fire Program,CAL FIRE-San Bernardino/Inyo/Mono,SEKI - Defined,0,0,0,1,1,0,1,1,0,Collaboration,Extremely satisfied,Extremely good,High,Somewhat confident,Extremely relevant
+BLM-California Desert Interagency Fire Program,California Air Resources Board,SEKI - Undefined,0,0,0,0,0,0,0,1,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+BLM-California Desert Interagency Fire Program,California Forest Management Task Force,SEKI - Undefined,1,0,1,0,0,0,1,1,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+BLM-California Desert Interagency Fire Program,The Nature Conservancy,SEKI - Undefined,0,0,0,0,0,0,1,1,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Somewhat relevant
+BLM-California Desert Interagency Fire Program,US Geological Survey,SEKI - Undefined,1,0,1,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Somewhat relevant
+BLM-California Desert Interagency Fire Program,USDA Natural Resource Conservation Service (NRCS),SEKI - Undefined,0,0,0,0,0,0,1,0,1,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Somewhat relevant
+BLM-California Desert Interagency Fire Program,USFS-Inyo National Forest Supervisors Office,SEKI - Undefined,0,0,0,1,1,0,1,1,1,Communication,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+BLM-California Desert Interagency Fire Program,USFS-Inyo National Forest-White Mountain,SEKI - Defined,1,0,1,1,1,0,1,1,1,Communication,Somewhat satisfied,Extremely good,High,Somewhat confident,Extremely relevant
+BLM-California Desert Interagency Fire Program,USFS-Region 5 HQ,SEKI - Undefined,0,0,0,1,0,0,1,1,1,Coordination,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+CAL FIRE-San Bernardino/Inyo/Mono,BLM-Bishop Field Office,SEKI - Defined,1,1,1,1,1,0,1,1,0,Collaboration,Extremely satisfied,Somewhat good,High,Completely confident,Extremely relevant
+CAL FIRE-San Bernardino/Inyo/Mono,BLM-California Desert Interagency Fire Program,SEKI - Defined,1,1,1,1,1,0,1,1,0,Collaboration,Extremely satisfied,Somewhat good,High,Completely confident,Extremely relevant
+CAL FIRE-San Bernardino/Inyo/Mono,California Air Resources Board,SEKI - Undefined,0,0,0,0,0,1,0,1,0,Coordination,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+CAL FIRE-San Bernardino/Inyo/Mono,USFS-Inyo National Forest Supervisors Office,SEKI - Undefined,1,1,1,1,1,0,1,1,0,NA,Extremely satisfied,NA,NA,NA,Somewhat relevant
+CAL FIRE-San Bernardino/Inyo/Mono,USFS-Inyo National Forest-Mammoth,SEKI - Defined,1,1,1,1,1,0,1,1,0,Collaboration,Extremely satisfied,Somewhat good,High,Completely confident,Extremely relevant
+CAL FIRE-San Bernardino/Inyo/Mono,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,1,1,1,1,1,0,1,1,0,Collaboration,Extremely satisfied,Somewhat good,High,Completely confident,Extremely relevant
+CAL FIRE-San Bernardino/Inyo/Mono,USFS-Inyo National Forest-White Mountain,SEKI - Defined,1,1,1,1,0,0,1,1,0,Collaboration,Extremely satisfied,Somewhat good,High,Completely confident,Extremely relevant
+CAL FIRE-San Bernardino/Inyo/Mono,Western Mono (Native American Indigenous Peoples),SEKI - Undefined,0,0,0,0,0,0,1,1,1,Communication,Extremely satisfied,Somewhat useful,NA,NA,Slightly relevant
+CAL FIRE-San Bernardino/Inyo/Mono,Yokut (Native American Indigenous Peoples),SEKI - Undefined,0,0,0,0,0,0,1,1,1,Communication,Extremely satisfied,Somewhat useful,NA,NA,Slightly relevant
+Defenders of Wildlife,CAL FIRE-Fresno Kings,SEKI - Defined,1,1,0,0,0,1,1,1,0,Collaboration,Somewhat satisfied,Extremely good,High,Somewhat confident,Extremely relevant
+Defenders of Wildlife,California Air Resources Board,SEKI - Undefined,0,0,0,0,0,1,0,1,0,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Defenders of Wildlife,Central Sierra Environmental Resource Center,SEKI - Undefined,1,1,1,0,0,0,1,1,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Slightly relevant
+Defenders of Wildlife,Dinkey Collaborative,SEKI - Undefined,1,1,1,0,0,1,1,1,0,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+Defenders of Wildlife,NPS-Sequoia and Kings,SEKI - Defined,0,1,0,0,0,0,0,1,0,Communication,Somewhat satisfied,Extremely good,Moderate,Somewhat confident,Somewhat relevant
+Defenders of Wildlife,Save the Redwoods,SEKI - Undefined,0,1,0,0,0,0,0,1,0,Communication,Somewhat satisfied,Not applicable,NA,NA,Slightly relevant
+Defenders of Wildlife,Sierra Club,SEKI - Undefined,1,1,1,0,0,0,0,1,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Slightly relevant
+Defenders of Wildlife,Sierra Forest Legacy,SEKI - Undefined,1,1,1,0,0,1,1,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Slightly relevant
+Defenders of Wildlife,Southern Sierra Prescribed Fire Council,SEKI - Undefined,1,1,1,0,0,1,0,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Somewhat relevant
+Defenders of Wildlife,The Nature Conservancy,SEKI - Undefined,1,0,1,0,0,0,0,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Slightly relevant
+Defenders of Wildlife,The Wilderness Society,SEKI - Undefined,0,0,0,0,0,0,0,1,0,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Slightly relevant
+Defenders of Wildlife,USFS-Inyo National Forest Supervisors Office,SEKI - Undefined,1,1,1,0,0,1,1,1,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Defenders of Wildlife,USFS-Inyo National Forest-Mammoth,SEKI - Defined,1,1,0,0,0,0,1,1,0,Communication,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Extremely relevant
+Defenders of Wildlife,USFS-Region 5 HQ,SEKI - Undefined,1,1,1,0,0,1,1,1,0,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Defenders of Wildlife,USFS-Sequoia National Forest Supervisors Office,SEKI - Undefined,1,0,1,0,0,0,1,1,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Defenders of Wildlife,USFS-Sequoia National Forest-Giant Sequoia National Monument,SEKI - Defined,0,1,0,0,0,0,0,1,0,Communication,Extremely satisfied,Somewhat good,Moderate,Somewhat confident,Extremely relevant
+Defenders of Wildlife,USFS-Sequoia National Forest-Hume Lake,SEKI - Defined,0,1,0,0,0,0,0,1,0,Communication,Extremely satisfied,Somewhat good,Moderate,Slightly confident,Extremely relevant
+Defenders of Wildlife,USFS-Sequoia National Forest-Western Divide,SEKI - Defined,0,1,0,0,0,0,0,1,0,Communication,Extremely satisfied,Somewhat good,Moderate,Slightly confident,Extremely relevant
+Defenders of Wildlife,USFS-Sierra National Forest Supervisors Office,SEKI - Undefined,1,1,1,0,0,1,1,1,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+Defenders of Wildlife,USFS-Sierra National Forest-High Sierra,SEKI - Defined,1,1,0,0,0,1,1,1,0,Collaboration,Somewhat satisfied,Extremely good,Moderate,Slightly confident,Extremely relevant
+USFS-Inyo National Forest-Mt. Whitney,BLM-Bishop Field Office,SEKI - Defined,0,1,0,0,1,1,1,1,0,Collaboration,Somewhat satisfied,Extremely good,High,Completely confident,Extremely relevant
+USFS-Inyo National Forest-Mt. Whitney,USFS-Inyo National Forest Supervisors Office,SEKI - Undefined,0,1,0,0,1,1,1,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest-Mt. Whitney,USFS-Inyo National Forest-Mammoth,SEKI - Defined,0,1,0,0,1,1,1,1,0,Collaboration,Extremely satisfied,Extremely good,High,Completely confident,Extremely relevant
+USFS-Inyo National Forest-Mt. Whitney,USFS-Inyo National Forest-White Mountain,SEKI - Defined,0,1,0,0,1,1,1,1,0,Collaboration,Extremely satisfied,Extremely good,High,Completely confident,Extremely relevant
+USFS-Inyo National Forest-Mt. Whitney,Western Mono (Native American Indigenous Peoples),SEKI - Undefined,0,1,0,0,1,1,1,1,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest-Mt. Whitney,Yokut (Native American Indigenous Peoples),SEKI - Undefined,0,1,0,0,1,1,1,1,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+NPS-Sequoia and Kings,BLM-Central California District,SEKI - Defined,0,0,0,0,1,0,0,1,0,Communication,Extremely satisfied,NA,NA,NA,NA
+NPS-Sequoia and Kings,CAL FIRE-Fresno Kings,SEKI - Defined,0,0,0,0,1,0,1,1,0,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,CAL FIRE-Tulare,SEKI - Defined,0,0,0,0,1,0,1,1,0,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,California Air Resources Board,SEKI - Undefined,0,0,0,0,0,1,0,0,0,Communication,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,Save the Redwoods,SEKI - Undefined,0,1,0,0,0,0,1,1,0,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,Southern Sierra Prescribed Fire Council,SEKI - Undefined,0,1,0,0,0,0,0,1,0,Communication,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,US Geological Survey,SEKI - Undefined,0,1,0,0,0,0,0,0,0,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,USFS-Inyo National Forest Supervisors Office,SEKI - Undefined,1,0,1,0,0,1,0,0,0,Communication,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,1,0,0,0,1,1,0,0,0,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,USFS-Inyo National Forest-White Mountain,SEKI - Defined,1,0,0,0,1,1,0,0,0,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,USFS-Sequoia National Forest Supervisors Office,SEKI - Undefined,1,0,1,0,0,1,0,0,0,Communication,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,USFS-Sequoia National Forest-Giant Sequoia National Monument,SEKI - Defined,1,1,0,0,1,1,1,1,1,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,USFS-Sequoia National Forest-Hume Lake,SEKI - Defined,1,1,0,0,1,1,1,1,1,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,USFS-Sequoia National Forest-Western Divide,SEKI - Defined,1,0,0,0,1,1,0,0,0,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,USFS-Sierra National Forest-High Sierra,SEKI - Defined,1,0,0,0,1,1,0,0,0,Collaboration,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,Western Mono (Native American Indigenous Peoples),SEKI - Undefined,1,0,1,0,0,0,0,0,0,Communication,NA,NA,NA,NA,NA
+NPS-Sequoia and Kings,Yokut (Native American Indigenous Peoples),SEKI - Undefined,1,0,1,0,0,0,0,0,0,Communication,NA,NA,NA,NA,NA
+NPS-Yosemite,California Air Resources Board,SEKI - Undefined,1,0,1,0,0,0,0,1,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+NPS-Yosemite,FWS-Los Banos,SEKI - Other,1,0,1,0,1,0,0,0,0,Communication,Somewhat dissatisfied,Somewhat useful,NA,NA,NA
+NPS-Yosemite,Hetchy City of SF,SEKI - Other,1,0,1,0,0,0,0,1,0,Communication,Somewhat satisfied,Extremely useful,NA,NA,NA
+NPS-Yosemite,Mariposa APCD,SEKI - Other,1,0,1,0,0,0,0,0,0,Coordination,Somewhat satisfied,Extremely useful,NA,NA,NA
+NPS-Yosemite,CAL FIRE-Madera Mariposa Merced,SEKI - Other,1,0,1,0,1,0,1,1,0,Communication,Somewhat satisfied,Extremely useful,NA,NA,NA
+NPS-Yosemite,NPS-Sequoia and Kings,SEKI - Defined,1,1,0,0,0,0,0,1,0,Collaboration,Somewhat satisfied,Extremely good,Moderate,Somewhat confident,Extremely relevant
+NPS-Yosemite,NPS-Sequoia and Kings,SEKI - Defined,1,1,0,0,0,0,0,1,0,Collaboration,Somewhat satisfied,Extremely good,Moderate,Somewhat confident,Extremely relevant
+NPS-Yosemite,PWR regional Staff,SEKI - Other,1,1,1,1,1,1,1,1,1,Collaboration,Extremely satisfied,Extremely useful,NA,NA,NA
+NPS-Yosemite,Save the Redwoods,SEKI - Undefined,0,1,1,0,0,0,1,1,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+NPS-Yosemite,SJ APCD,SEKI - Other,1,0,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Extremely useful,NA,NA,NA
+NPS-Yosemite,Southern Sierra Prescribed Fire Council,SEKI - Undefined,1,0,1,0,0,0,0,0,0,NA,NA,Somewhat useful,NA,NA,Not relevant at all
+NPS-Yosemite,STF,SEKI - Other,1,0,1,0,1,0,1,1,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,NA
+NPS-Yosemite,USFS-Inyo National Forest-Mammoth,SEKI - Defined,0,0,0,0,1,0,0,1,0,Communication,Somewhat satisfied,Extremely good,Moderate,Completely confident,Extremely relevant
+NPS-Yosemite,USFS-Sierra National Forest Supervisors Office,SEKI - Other,1,0,1,0,1,0,1,1,0,Communication,Somewhat satisfied,Extremely useful,NA,NA,NA
+Sierra Forest Legacy,American Forests,SEKI - Other,1,1,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,NA
+Sierra Forest Legacy,CAL FIRE-Fresno Kings,SEKI - Defined,1,0,0,1,0,0,0,0,0,Communication,Extremely satisfied,Extremely good,Extreme,Slightly confident,Extremely relevant
+Sierra Forest Legacy,California Air Resources Board,SEKI - Undefined,1,0,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Extremely useful,NA,NA,Slightly relevant
+Sierra Forest Legacy,California Forest Management Task Force,SEKI - Undefined,1,1,1,1,0,0,0,0,0,Communication,Somewhat satisfied,Extremely useful,NA,NA,Slightly relevant
+Sierra Forest Legacy,Central Sierra Environmental Resource Center,SEKI - Undefined,1,1,1,0,0,0,0,0,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Not relevant at all
+Sierra Forest Legacy,Defenders of Wildlife,SEKI - Undefined,1,1,1,0,0,0,0,0,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Not relevant at all
+Sierra Forest Legacy,Dinkey Collaborative,SEKI - Undefined,1,1,1,1,0,0,0,0,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Not relevant at all
+Sierra Forest Legacy,Fresno Audubon,SEKI - Other,0,0,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,NA
+Sierra Forest Legacy,Great Basin Institute,SEKI - Other,1,0,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Not applicable,NA,NA,NA
+Sierra Forest Legacy,Highway 168 Fire Safe Council,SEKI - Other,1,1,1,0,0,0,0,0,0,Communication,Extremely satisfied,Extremely useful,NA,NA,NA
+Sierra Forest Legacy,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,1,0,0,0,0,0,Communication,Extremely satisfied,Extremely good,Low,Slightly confident,Extremely relevant
+Sierra Forest Legacy,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,1,0,0,0,0,0,Communication,Extremely satisfied,Extremely good,Low,Slightly confident,Extremely relevant
+Sierra Forest Legacy,Outdoor Alliance California,SEKI - Other,0,0,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,NA
+Sierra Forest Legacy,Save the Redwoods,SEKI - Undefined,1,1,1,1,0,0,0,0,0,Coordination,Extremely satisfied,Extremely useful,NA,NA,Not relevant at all
+Sierra Forest Legacy,Sequoia Riverlands Trust,SEKI - Other,0,0,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,NA
+Sierra Forest Legacy,Sierra Club,SEKI - Undefined,0,0,1,0,0,0,0,0,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Not relevant at all
+Sierra Forest Legacy,Southern Sierra Prescribed Fire Council,SEKI - Undefined,1,1,1,0,0,0,0,0,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Not relevant at all
+Sierra Forest Legacy,The Nature Conservancy,SEKI - Undefined,1,1,1,0,0,0,0,0,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Not relevant at all
+Sierra Forest Legacy,The Wilderness Society,SEKI - Undefined,1,1,1,0,0,0,0,0,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Not relevant at all
+Sierra Forest Legacy,Unite the Parks,SEKI - Other,0,0,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,NA
+Sierra Forest Legacy,USDA Natural Resource Conservation Service (NRCS),SEKI - Undefined,1,1,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Not applicable,NA,NA,Not relevant at all
+Sierra Forest Legacy,USFS-Inyo National Forest Supervisors Office,SEKI - Undefined,1,1,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+Sierra Forest Legacy,USFS-Inyo National Forest-Mammoth,SEKI - Defined,1,0,0,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat good,Moderate,Slightly confident,Extremely relevant
+Sierra Forest Legacy,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,1,0,0,0,0,0,0,0,0,Communication,Somewhat satisfied,Not applicable,Low,Slightly confident,Extremely relevant
+Sierra Forest Legacy,USFS-Inyo National Forest-White Mountain,SEKI - Defined,1,1,0,1,0,0,0,1,0,NA,Somewhat satisfied,Somewhat good,Low,Slightly confident,Somewhat relevant
+Sierra Forest Legacy,USFS-Region 5 HQ,SEKI - Undefined,1,1,1,1,0,0,0,0,0,Coordination,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+Sierra Forest Legacy,USFS-Sequoia National Forest Supervisors Office,SEKI - Undefined,1,1,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+Sierra Forest Legacy,USFS-Sequoia National Forest-Giant Sequoia National Monument,SEKI - Defined,1,0,0,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat good,Low,Slightly confident,Extremely relevant
+Sierra Forest Legacy,USFS-Sequoia National Forest-Hume Lake,SEKI - Defined,1,0,1,0,0,0,1,1,1,NA,Somewhat satisfied,Somewhat good,High,Slightly confident,Somewhat relevant
+Sierra Forest Legacy,USFS-Sequoia National Forest-Kern River,SEKI - Defined,1,0,1,0,0,0,1,1,1,NA,Somewhat satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+Sierra Forest Legacy,USFS-Sequoia National Forest-Western Divide,SEKI - Defined,1,0,0,0,0,0,0,0,0,Communication,Somewhat satisfied,Not applicable,Moderate,Slightly confident,Extremely relevant
+Sierra Forest Legacy,USFS-Sierra National Forest Supervisors Office,SEKI - Undefined,1,1,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+Sierra Forest Legacy,USFS-Sierra National Forest-High Sierra,SEKI - Defined,1,0,0,1,0,0,0,0,0,Collaboration,Somewhat satisfied,Not applicable,Moderate,Slightly confident,Extremely relevant
+Sierra Forest Legacy,Western Mono (Native American Indigenous Peoples),SEKI - Undefined,1,1,1,0,0,0,0,0,0,Coordination,Extremely satisfied,Extremely useful,NA,NA,Extremely relevant
+Sierra Forest Legacy,WildSpaces,SEKI - Other,0,0,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,NA
+Sierra Forest Legacy,Yosemite RCD,SEKI - Other,1,1,1,0,0,0,0,0,0,Communication,Extremely satisfied,Extremely useful,NA,NA,NA
+The Wilderness Society,CAL FIRE-San Bernardino/Inyo/Mono,SEKI - Defined,0,1,0,0,0,0,0,1,0,Communication,Somewhat satisfied,Not applicable,NA,Slightly confident,NA
+The Wilderness Society,CAL FIRE-Fresno Kings,SEKI - Defined,0,1,0,0,0,0,0,1,0,Communication,Somewhat satisfied,Not applicable,NA,Slightly confident,NA
+The Wilderness Society,CAL FIRE-Tulare,SEKI - Defined,0,1,0,0,0,0,0,1,0,Communication,Somewhat satisfied,Not applicable,NA,Slightly confident,NA
+The Wilderness Society,California Air Resources Board,SEKI - Undefined,0,0,0,0,0,1,0,0,0,Coordination,Somewhat satisfied,Not applicable,NA,NA,Somewhat relevant
+The Wilderness Society,Central Sierra Environmental Resource Center,SEKI - Undefined,1,1,1,0,0,0,1,1,1,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Slightly relevant
+The Wilderness Society,Defenders of Wildlife,SEKI - Undefined,1,1,1,0,0,0,1,1,1,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Slightly relevant
+The Wilderness Society,Dinkey Collaborative,SEKI - Undefined,0,0,0,1,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+The Wilderness Society,NPS-Sequoia and Kings,SEKI - Defined,0,1,0,0,0,0,0,1,0,Communication,Extremely satisfied,Somewhat good,Low,Somewhat confident,Somewhat relevant
+The Wilderness Society,NPS-Sequoia and Kings,SEKI - Defined,0,1,0,0,0,0,0,1,0,Communication,Extremely satisfied,Somewhat good,Low,Somewhat confident,Somewhat relevant
+The Wilderness Society,Sierra Club,SEKI - Undefined,1,1,1,0,0,0,1,1,1,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Slightly relevant
+The Wilderness Society,Sierra Forest Legacy,SEKI - Undefined,1,1,1,0,0,0,1,1,1,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Slightly relevant
+The Wilderness Society,The Nature Conservancy,SEKI - Undefined,1,1,1,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Slightly relevant
+The Wilderness Society,USFS-Inyo National Forest Supervisors Office,SEKI - Undefined,0,0,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat not useful,NA,NA,Somewhat relevant
+The Wilderness Society,USFS-Inyo National Forest-Mammoth,SEKI - Defined,0,1,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,High,Slightly confident,Somewhat relevant
+The Wilderness Society,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,0,1,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,Moderate,Slightly confident,Somewhat relevant
+The Wilderness Society,USFS-Inyo National Forest-White Mountain,SEKI - Defined,0,1,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,Moderate,Slightly confident,Somewhat relevant
+The Wilderness Society,USFS-Region 5 HQ,SEKI - Undefined,1,1,1,1,0,1,1,1,1,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+The Wilderness Society,USFS-Sequoia National Forest Supervisors Office,SEKI - Undefined,0,0,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat not useful,NA,NA,Somewhat relevant
+The Wilderness Society,USFS-Sequoia National Forest-Giant Sequoia National Monument,SEKI - Defined,0,1,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,Moderate,Slightly confident,Somewhat relevant
+The Wilderness Society,USFS-Sequoia National Forest-Hume Lake,SEKI - Defined,0,1,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,Moderate,Slightly confident,Somewhat relevant
+The Wilderness Society,USFS-Sequoia National Forest-Kern River,SEKI - Defined,0,1,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,Moderate,Slightly confident,Somewhat relevant
+The Wilderness Society,USFS-Sequoia National Forest-Western Divide,SEKI - Defined,0,1,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,Moderate,Slightly confident,Somewhat relevant
+The Wilderness Society,USFS-Sierra National Forest Supervisors Office,SEKI - Undefined,0,0,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat not useful,NA,NA,Somewhat relevant
+The Wilderness Society,USFS-Sierra National Forest-High Sierra,SEKI - Defined,0,1,0,0,0,0,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,Low,Slightly confident,Somewhat relevant
+Tulare Basin Watershed Partnership,BLM-Bakersfield,SEKI - Other,0,1,0,0,0,0,0,0,1,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,NA
+Tulare Basin Watershed Partnership,CAL FIRE-Tulare,SEKI - Defined,0,1,0,0,0,0,0,0,1,Collaboration,Extremely satisfied,Extremely good,Extreme,Not confident at all,Extremely relevant
+Tulare Basin Watershed Partnership,California Forest Management Task Force,SEKI - Undefined,0,1,0,0,0,0,0,0,1,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Tulare Basin Watershed Partnership,Dinkey Collaborative,SEKI - Undefined,0,1,0,0,0,0,0,0,1,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Tulare Basin Watershed Partnership,NPS-Sequoia and Kings,SEKI - Defined,0,1,0,0,0,0,0,0,1,Collaboration,Extremely satisfied,Extremely good,Extreme,Not confident at all,Extremely relevant
+Tulare Basin Watershed Partnership,NPS-Sequoia and Kings,SEKI - Defined,0,1,0,0,0,0,0,0,1,Collaboration,Extremely satisfied,Extremely good,Extreme,Not confident at all,Extremely relevant
+Tulare Basin Watershed Partnership,Sierra Resource Conservation District,SEKI - Other,0,1,0,0,0,0,0,0,1,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,NA
+Tulare Basin Watershed Partnership,The Nature Conservancy,SEKI - Undefined,0,1,0,0,0,0,0,0,1,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Tulare Basin Watershed Partnership,UC Merced SNRI & ANR,SEKI - Other,0,1,0,0,0,0,0,0,1,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,NA
+Tulare Basin Watershed Partnership,US Geological Survey,SEKI - Undefined,0,1,0,0,0,0,0,0,1,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Tulare Basin Watershed Partnership,USDA Natural Resource Conservation Service (NRCS),SEKI - Undefined,0,1,0,0,0,0,0,0,1,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Tulare Basin Watershed Partnership,USFS-Sequoia National Forest Supervisors Office,SEKI - Undefined,0,1,0,0,0,0,0,0,1,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Tulare Basin Watershed Partnership,USFS-Sierra National Forest Supervisors Office,SEKI - Undefined,0,1,0,0,0,0,0,0,1,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Tulare Basin Watershed Partnership,Western Mono (Native American Indigenous Peoples),SEKI - Undefined,0,1,0,0,0,0,0,0,1,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+Tulare Basin Watershed Partnership,Yokut (Native American Indigenous Peoples),SEKI - Undefined,0,1,0,0,0,0,0,0,1,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+US Geological Survey,NPS-Sequoia and Kings,SEKI - Defined,0,1,0,0,0,0,0,0,0,Collaboration,Extremely satisfied,Extremely good,Moderate,Somewhat confident,Extremely relevant
+US Geological Survey,NPS-Sequoia and Kings,SEKI - Defined,0,1,0,0,0,0,0,0,0,Collaboration,Extremely satisfied,Extremely good,Moderate,Somewhat confident,Extremely relevant
+US Geological Survey,Save the Redwoods,SEKI - Undefined,0,1,0,0,0,0,0,0,0,Collaboration,Extremely satisfied,Somewhat useful,NA,NA,Slightly relevant
+US Geological Survey,USFS-Region 5 HQ,SEKI - Undefined,0,1,0,0,0,0,0,0,0,Coordination,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+US Geological Survey,USFS-Sequoia National Forest-Giant Sequoia National Monument,SEKI - Defined,0,1,0,0,0,0,0,0,0,Coordination,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+USFS-Inyo National Forest Supervisors Office,13 Mono/Inyo Co. Local Fire Departments,SEKI - Other,1,0,1,1,1,0,0,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,BLM-Bishop Field Office,SEKI - Defined,1,1,1,1,1,1,1,1,1,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,BLM-California Desert Interagency Fire Program,SEKI - Defined,1,0,0,1,1,1,0,0,0,Coordination,Somewhat dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,BLM-Central California District,SEKI - Defined,1,0,0,1,1,1,1,1,1,Collaboration,Somewhat dissatisfied,Somewhat good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,CAL FIRE-San Bernardino/Inyo/Mono,SEKI - Defined,1,0,0,1,1,1,1,1,1,Coordination,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,California Air Resources Board,SEKI - Undefined,1,1,1,1,0,1,1,1,0,Coordination,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,California Air Resources Board,SEKI - Other,1,1,1,1,1,1,1,1,0,Coordination,Somewhat satisfied,Extremely useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,California Forest Management Task Force,SEKI - Undefined,1,1,1,0,0,1,1,1,0,Communication,Somewhat satisfied,Somewhat not useful,NA,NA,Slightly relevant
+USFS-Inyo National Forest Supervisors Office,Great Basin Unified APCD,SEKI - Other,1,1,1,1,1,1,1,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,Inyo Co. Bd. of Sup'v.,SEKI - Other,1,1,1,1,1,1,1,1,0,Coordination,Extremely satisfied,Somewhat useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,Inyo/Mono Co. Fire Safe Council,SEKI - Other,1,1,1,1,0,1,1,1,0,Coordination,Somewhat satisfied,Extremely useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,Mono Co. Bd. of Sup'v.,SEKI - Other,1,1,1,1,1,1,1,1,0,Coordination,Extremely satisfied,Somewhat useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,"NOAA Reno, Las Vegas, Hanford offices",SEKI - Other,1,0,1,0,1,1,1,1,1,Collaboration,Extremely satisfied,Extremely useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,1,1,1,0,0,0,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,NPS-Sequoia and Kings,SEKI - Defined,1,1,0,1,1,1,0,0,0,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,NPS-Yosemite,SEKI - Other,1,1,1,1,0,1,1,1,0,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,Plumas Corporation,SEKI - Other,1,1,1,1,0,0,1,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,Sierra Club,SEKI - Undefined,1,1,1,0,0,1,1,1,0,Communication,Somewhat satisfied,Somewhat not useful,NA,NA,Slightly relevant
+USFS-Inyo National Forest Supervisors Office,Sierra Forest Legacy,SEKI - Undefined,1,1,1,0,0,1,1,1,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+USFS-Inyo National Forest Supervisors Office,Southern Sierra Prescribed Fire Council,SEKI - Undefined,0,1,1,0,0,1,1,1,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+USFS-Inyo National Forest Supervisors Office,The Nature Conservancy,SEKI - Undefined,1,1,1,0,0,0,1,1,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+USFS-Inyo National Forest Supervisors Office,The Wilderness Society,SEKI - Undefined,1,1,1,0,0,1,1,0,0,Communication,Somewhat satisfied,Somewhat not useful,NA,NA,Slightly relevant
+USFS-Inyo National Forest Supervisors Office,USDA Natural Resource Conservation Service (NRCS),SEKI - Undefined,1,1,1,0,0,1,1,1,0,Coordination,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Inyo National Forest-Mammoth,SEKI - Defined,1,1,1,1,1,1,1,1,1,Collaboration,Extremely dissatisfied,NA,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,1,1,1,1,1,1,1,1,1,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Inyo National Forest-White Mountain,SEKI - Defined,1,1,1,1,1,1,1,1,1,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Region 5 HQ,SEKI - Undefined,1,1,1,1,1,1,1,1,1,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Region 5 South Operations,SEKI - Other,1,0,1,1,1,1,1,1,1,Collaboration,Extremely satisfied,Extremely useful,NA,NA,NA
+USFS-Inyo National Forest Supervisors Office,USFS-Sequoia National Forest Supervisors Office,SEKI - Undefined,1,1,1,1,1,1,1,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Sequoia National Forest-Giant Sequoia National Monument,SEKI - Defined,1,1,0,1,1,1,1,1,1,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Sequoia National Forest-Hume Lake,SEKI - Defined,1,1,0,0,1,1,1,1,1,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Sequoia National Forest-Kern River,SEKI - Defined,1,1,0,0,1,1,1,1,1,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Sequoia National Forest-Western Divide,SEKI - Defined,1,1,0,0,1,1,1,1,1,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Sierra National Forest Supervisors Office,SEKI - Undefined,1,1,1,1,1,1,1,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,USFS-Sierra National Forest-High Sierra,SEKI - Defined,1,1,0,0,1,1,1,1,1,Collaboration,Extremely dissatisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest Supervisors Office,Western Mono (Native American Indigenous Peoples),SEKI - Undefined,1,1,1,1,1,1,1,1,1,Communication,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest-Mammoth,BLM-Bishop Field Office,SEKI - Defined,1,1,0,1,1,1,1,1,0,Collaboration,Somewhat satisfied,Somewhat good,High,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest-Mammoth,BLM-Central California District,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Somewhat satisfied,Somewhat good,Low,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest-Mammoth,CAL FIRE-San Bernardino/Inyo/Mono,SEKI - Defined,1,0,0,0,1,0,0,0,0,Communication,Extremely satisfied,Somewhat good,Low,Somewhat confident,Somewhat relevant
+USFS-Inyo National Forest-Mammoth,California Air Resources Board,SEKI - Undefined,0,0,0,0,0,1,0,0,0,Coordination,Extremely satisfied,Extremely useful,NA,NA,Somewhat relevant
+USFS-Inyo National Forest-Mammoth,Friends of the Inyo,SEKI - Other,1,1,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,NA
+USFS-Inyo National Forest-Mammoth,Mammoth Lakes FD,SEKI - Other,1,0,1,0,1,0,1,1,0,Communication,Extremely satisfied,Extremely useful,NA,NA,NA
+USFS-Inyo National Forest-Mammoth,Mono County VFD’s,SEKI - Other,1,0,1,0,1,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,NA
+USFS-Inyo National Forest-Mammoth,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,0,1,0,0,1,0,Communication,Extremely satisfied,Somewhat good,Low,Somewhat confident,Somewhat relevant
+USFS-Inyo National Forest-Mammoth,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,0,1,0,0,1,0,Communication,Extremely satisfied,Somewhat good,Low,Somewhat confident,Somewhat relevant
+USFS-Inyo National Forest-Mammoth,Plumas Corporation,SEKI - Other,1,1,1,0,0,0,1,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,NA
+USFS-Inyo National Forest-Mammoth,USFS-Inyo National Forest Supervisors Office,SEKI - Undefined,1,1,1,1,1,1,1,1,1,Coordination,Extremely satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest-Mammoth,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,1,0,1,0,1,0,1,0,0,Collaboration,Somewhat satisfied,Somewhat good,High,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest-Mammoth,USFS-Inyo National Forest-White Mountain,SEKI - Defined,1,1,1,0,1,1,1,1,0,Collaboration,Extremely satisfied,Extremely good,Low,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest-Mammoth,USFS-Region 5 HQ,SEKI - Undefined,1,1,1,1,1,0,1,1,0,Coordination,Somewhat satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest-Mammoth,USFS-Sequoia National Forest Supervisors Office,SEKI - Undefined,1,0,1,0,1,0,0,0,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest-Mammoth,USFS-Sequoia National Forest-Giant Sequoia National Monument,SEKI - Defined,1,0,0,0,1,0,0,0,0,Communication,Extremely satisfied,Somewhat good,Low,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest-Mammoth,USFS-Sierra National Forest Supervisors Office,SEKI - Undefined,1,0,1,0,1,0,0,0,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Extremely relevant
+USFS-Inyo National Forest-Mammoth,USFS-Sierra National Forest-High Sierra,SEKI - Defined,1,0,0,0,1,0,0,0,0,Communication,Extremely satisfied,Somewhat good,Moderate,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest-Mammoth,Western Mono (Native American Indigenous Peoples),SEKI - Undefined,1,1,1,0,0,0,1,1,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Slightly relevant
+USFS-Inyo National Forest-Mammoth,Yokut (Native American Indigenous Peoples),SEKI - Undefined,1,0,1,0,0,0,1,1,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Slightly relevant
+USFS-Inyo National Forest-White Mountain,BLM-Bishop Field Office,SEKI - Defined,1,0,1,0,1,0,1,1,1,Collaboration,Somewhat dissatisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+USFS-Inyo National Forest-White Mountain,BLM-Central California District,SEKI - Defined,1,0,1,0,1,0,1,1,1,Collaboration,Somewhat dissatisfied,Somewhat good,Moderate,Somewhat confident,Slightly relevant
+USFS-Inyo National Forest-White Mountain,CAL FIRE-San Bernardino/Inyo/Mono,SEKI - Defined,0,0,1,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+USFS-Inyo National Forest-White Mountain,California Air Resources Board,SEKI - Undefined,0,0,0,0,0,1,0,0,0,Coordination,Somewhat satisfied,Somewhat useful,NA,NA,Not relevant at all
+USFS-Inyo National Forest-White Mountain,USFS-Inyo National Forest Supervisors Office,SEKI - Undefined,1,1,1,1,1,1,1,1,1,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+USFS-Inyo National Forest-White Mountain,USFS-Inyo National Forest-Mammoth,SEKI - Defined,1,1,1,1,1,1,1,1,1,Collaboration,Extremely satisfied,Somewhat good,Moderate,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest-White Mountain,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,1,1,1,1,1,1,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Extremely relevant
+USFS-Inyo National Forest-White Mountain,USFS-Region 5 HQ,SEKI - Undefined,1,1,1,1,1,1,1,1,1,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+USFS-Region 5 South Operations,BLM-Bishop Field Office,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Not confident at all,Extremely relevant
+USFS-Region 5 South Operations,BLM-California Desert Interagency Fire Program,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,BLM-Central California District,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,CAL FIRE-San Bernardino/Inyo/Mono,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Completely confident,Extremely relevant
+USFS-Region 5 South Operations,CAL FIRE-Fresno Kings,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,Moderate,Completely confident,Extremely relevant
+USFS-Region 5 South Operations,CAL FIRE-Tulare,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Completely confident,Extremely relevant
+USFS-Region 5 South Operations,California Air Resources Board,SEKI - Undefined,0,0,0,0,1,0,0,0,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Somewhat relevant
+USFS-Region 5 South Operations,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,Southern Sierra Prescribed Fire Council,SEKI - Undefined,0,0,0,0,1,0,0,0,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Somewhat relevant
+USFS-Region 5 South Operations,USFS-Inyo National Forest-Mammoth,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,USFS-Inyo National Forest-White Mountain,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,USFS-Sequoia National Forest-Giant Sequoia National Monument,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,USFS-Sequoia National Forest-Hume Lake,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,USFS-Sequoia National Forest-Kern River,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,USFS-Sequoia National Forest-Western Divide,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Region 5 South Operations,USFS-Sierra National Forest-High Sierra,SEKI - Defined,0,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,High,Slightly confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,Army Corps of Engineers,SEKI - Undefined,1,0,1,0,1,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Slightly relevant
+USFS-Sequoia National Forest Supervisors Office,BLM-California Desert Interagency Fire Program,SEKI - Defined,1,0,1,0,1,0,0,0,0,Collaboration,Extremely satisfied,Extremely good,High,Completely confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,BLM-Central California District,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Extremely good,Moderate,Completely confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,CAL FIRE-Fresno Kings,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+USFS-Sequoia National Forest Supervisors Office,CAL FIRE-Tulare,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Somewhat satisfied,Extremely good,High,Somewhat confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,California Air Resources Board,SEKI - Undefined,1,0,1,0,0,1,0,1,0,Collaboration,Somewhat satisfied,Extremely useful,NA,NA,Slightly relevant
+USFS-Sequoia National Forest Supervisors Office,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,0,1,0,0,1,1,Collaboration,Extremely satisfied,Extremely good,High,Completely confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,0,1,0,0,1,1,Collaboration,Extremely satisfied,Extremely good,High,Completely confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,Save the Redwoods,SEKI - Undefined,0,0,0,0,0,0,0,1,0,Collaboration,Somewhat satisfied,Somewhat useful,NA,NA,Not relevant at all
+USFS-Sequoia National Forest Supervisors Office,USFS-Region 5 HQ,SEKI - Undefined,1,0,1,1,1,1,1,1,1,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,USFS-Sequoia National Forest-Giant Sequoia National Monument,SEKI - Defined,1,0,1,1,1,1,1,1,1,Collaboration,Extremely satisfied,Extremely good,Extreme,Completely confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,USFS-Sequoia National Forest-Hume Lake,SEKI - Defined,1,0,1,1,1,1,1,1,1,Collaboration,Extremely satisfied,Extremely good,Extreme,Completely confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,USFS-Sequoia National Forest-Kern River,SEKI - Defined,1,0,1,1,1,1,1,1,1,Collaboration,Somewhat satisfied,Extremely good,Extreme,Completely confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,USFS-Sequoia National Forest-Western Divide,SEKI - Defined,1,0,1,1,1,1,1,1,1,Collaboration,Somewhat satisfied,Extremely good,Extreme,Completely confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,USFS-Sierra National Forest-High Sierra,SEKI - Defined,1,0,0,0,1,0,0,0,0,Collaboration,Extremely satisfied,Extremely good,Extreme,Completely confident,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,Western Mono (Native American Indigenous Peoples),SEKI - Undefined,1,0,1,0,1,0,0,1,0,Collaboration,Extremely satisfied,Somewhat useful,NA,NA,Extremely relevant
+USFS-Sequoia National Forest Supervisors Office,Yokut (Native American Indigenous Peoples),SEKI - Undefined,1,0,1,0,1,0,0,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Sequoia National Forest-Giant Sequoia National Monument,CAL FIRE-San Bernardino/Inyo/Mono,SEKI - Defined,0,0,0,1,0,0,0,0,0,Communication,Extremely satisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Sequoia National Forest-Giant Sequoia National Monument,CAL FIRE-Fresno Kings,SEKI - Defined,0,0,0,1,0,0,0,0,0,Communication,Extremely satisfied,Extremely good,Extreme,Somewhat confident,Extremely relevant
+USFS-Sequoia National Forest-Giant Sequoia National Monument,CAL FIRE-Tulare,SEKI - Defined,0,0,0,1,0,0,0,0,0,Communication,Extremely satisfied,Extremely good,High,Somewhat confident,Extremely relevant
+USFS-Sequoia National Forest-Giant Sequoia National Monument,California Air Resources Board,SEKI - Undefined,0,0,0,0,0,1,0,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,Slightly relevant
+USFS-Sequoia National Forest-Giant Sequoia National Monument,California Forest Management Task Force,SEKI - Undefined,0,0,0,0,0,1,0,1,0,Collaboration,Extremely satisfied,Somewhat useful,NA,NA,Slightly relevant
+USFS-Sequoia National Forest-Giant Sequoia National Monument,Sierra Forest Legacy,SEKI - Undefined,0,0,0,0,0,0,0,1,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Slightly relevant
+USFS-Sequoia National Forest-Giant Sequoia National Monument,Southern Sierra Prescribed Fire Council,SEKI - Undefined,0,0,0,0,0,1,0,0,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Slightly relevant
+USFS-Sequoia National Forest-Giant Sequoia National Monument,The Nature Conservancy,SEKI - Undefined,0,0,0,0,0,1,0,1,0,Communication,Extremely satisfied,Extremely useful,NA,NA,Slightly relevant
+USFS-Sequoia National Forest-Kern River,BLM-Central California District,SEKI - Defined,1,0,1,0,1,0,0,0,0,Collaboration,Extremely satisfied,Extremely good,Extreme,Not confident at all,Extremely relevant
+USFS-Sequoia National Forest-Kern River,CAL FIRE-Fresno Kings,SEKI - Defined,0,0,0,0,1,0,0,0,0,Communication,Somewhat satisfied,Somewhat good,Low,Somewhat confident,Slightly relevant
+USFS-Sequoia National Forest-Kern River,California Air Resources Board,SEKI - Undefined,1,0,1,0,0,0,0,0,0,Coordination,Extremely satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Sequoia National Forest-Kern River,Kern County Fire,SEKI - Other,1,0,1,0,1,1,0,0,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,NA
+USFS-Sequoia National Forest-Kern River,NPS-Sequoia and Kings,SEKI - Defined,1,1,0,0,1,1,0,0,0,Communication,Extremely satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+USFS-Sequoia National Forest-Kern River,NPS-Sequoia and Kings,SEKI - Defined,1,1,0,0,1,1,0,0,0,Communication,Extremely satisfied,Somewhat good,Low,Somewhat confident,Somewhat relevant
+USFS-Sequoia National Forest-Kern River,Southern Sierra Prescribed Fire Council,SEKI - Undefined,1,0,1,0,0,0,0,0,0,Communication,Extremely satisfied,Extremely useful,NA,NA,Not relevant at all
+USFS-Sequoia National Forest-Kern River,The Nature Conservancy,SEKI - Undefined,0,0,1,0,0,0,0,0,0,Coordination,Extremely satisfied,Somewhat useful,NA,NA,Not relevant at all
+USFS-Sequoia National Forest-Kern River,USFS-Inyo National Forest-Mammoth,SEKI - Defined,1,0,0,0,1,0,0,0,0,Communication,Extremely satisfied,Somewhat good,Low,Completely confident,Slightly relevant
+USFS-Sequoia National Forest-Kern River,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,1,0,0,0,1,1,0,0,0,Communication,Extremely satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+USFS-Sequoia National Forest-Kern River,USFS-Inyo National Forest-White Mountain,SEKI - Defined,1,0,0,0,1,1,0,0,0,Communication,Extremely satisfied,Somewhat good,Moderate,Somewhat confident,Slightly relevant
+USFS-Sequoia National Forest-Kern River,USFS-Sequoia National Forest Supervisors Office,SEKI - Undefined,1,1,1,1,1,1,1,1,1,Coordination,Extremely satisfied,Extremely useful,NA,NA,Extremely relevant
+USFS-Sequoia National Forest-Kern River,USFS-Sequoia National Forest-Hume Lake,SEKI - Defined,1,1,0,0,1,0,0,1,0,Collaboration,Somewhat satisfied,Somewhat good,Low,Somewhat confident,Slightly relevant
+USFS-Sequoia National Forest-Kern River,USFS-Sequoia National Forest-Western Divide,SEKI - Defined,1,1,0,0,1,0,0,1,0,Collaboration,Somewhat satisfied,Somewhat good,High,Somewhat confident,Extremely relevant
+USFS-Sequoia National Forest-Kern River,USFS-Sierra National Forest-High Sierra,SEKI - Defined,1,0,0,0,1,0,0,0,0,Communication,Somewhat satisfied,Somewhat good,Low,Somewhat confident,Slightly relevant
+USFS-Sequoia National Forest-Kern River,Western Mono (Native American Indigenous Peoples),SEKI - Undefined,1,0,1,0,0,0,0,0,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Somewhat relevant
+USFS-Sequoia National Forest-Kern River,Yokut (Native American Indigenous Peoples),SEKI - Undefined,1,0,1,0,0,0,0,0,0,Communication,Extremely satisfied,Somewhat useful,NA,NA,Somewhat relevant
+BLM-Central California District,BLM-Bishop Field Office,SEKI - Defined,1,1,1,1,1,1,1,1,1,Collaboration,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Extremely relevant
+BLM-Central California District,BLM-California Desert Interagency Fire Program,SEKI - Defined,1,0,0,0,1,1,0,0,0,Collaboration,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+BLM-Central California District,CAL FIRE-Fresno Kings,SEKI - Defined,1,0,0,0,1,1,0,0,0,Coordination,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Extremely relevant
+BLM-Central California District,CAL FIRE-San Bernardino/Inyo/Mono,SEKI - Defined,1,0,0,0,1,1,0,0,0,Coordination,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Extremely relevant
+BLM-Central California District,California Air Resources Board,SEKI - Undefined,0,0,0,0,0,1,0,1,0,Coordination,Somewhat dissatisfied,Somewhat useful,NA,NA,Extremely relevant
+BLM-Central California District,California Forest Management Task Force,SEKI - Undefined,0,0,0,0,0,0,1,0,1,Communication,Somewhat satisfied,Somewhat not useful,NA,NA,Somewhat relevant
+BLM-Central California District,NPS-Sequoia and Kings,SEKI - Defined,1,0,0,0,1,1,0,0,0,Coordination,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+BLM-Central California District,Sierra Nevada Conservancy,SEKI - Other,0,0,0,0,0,0,1,1,0,Collaboration,Extremely satisfied,Extremely useful,NA,NA,NA
+BLM-Central California District,Southern Sierra Prescribed Fire Council,SEKI - Undefined,0,0,1,0,0,0,1,1,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Slightly relevant
+BLM-Central California District,The Nature Conservancy,SEKI - Undefined,0,1,0,0,0,0,1,1,0,Communication,Somewhat dissatisfied,Somewhat useful,NA,NA,Slightly relevant
+BLM-Central California District,US Geological Survey,SEKI - Undefined,1,0,1,0,0,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Slightly relevant
+BLM-Central California District,USDA Natural Resource Conservation Service (NRCS),SEKI - Undefined,0,0,0,0,0,0,0,0,1,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Slightly relevant
+BLM-Central California District,USFS-Inyo National Forest-Mt. Whitney,SEKI - Defined,1,0,0,0,1,1,0,0,0,Coordination,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+BLM-Central California District,USFS-Sequoia National Forest Supervisors Office,SEKI - Undefined,1,0,1,0,1,0,0,0,0,Communication,Somewhat satisfied,Somewhat useful,NA,NA,Somewhat relevant
+BLM-Central California District,USFS-Sequoia National Forest-Kern River,SEKI - Defined,1,0,0,0,1,1,0,0,0,Coordination,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant
+BLM-Central California District,USFS-Sequoia National Forest-Western Divide,SEKI - Defined,1,0,0,0,1,1,0,0,0,Coordination,Somewhat satisfied,Somewhat good,Moderate,Somewhat confident,Somewhat relevant

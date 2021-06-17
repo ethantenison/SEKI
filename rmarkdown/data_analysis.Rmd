@@ -1,0 +1,33 @@
+---
+title: "SEKI Data Analysis"
+author: "Ethan Tenison"
+date: "6/16/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+library(tidyverse) #Data cleaning and visualizations
+library(janitor) #Basic data preprocessing 
+library(readr) #Reading data from various formats 
+
+
+node_attri <- read_csv("data/processed/SEKI Node Attributes.csv")
+edges <- read_csv("data/processed/SEKIedgelist.csv")
+```
+
+Visualizing the preliminary dataset using `Visnetwork`.
+
+```{r message=FALSE, warning=FALSE}
+
+library(visNetwork) #visualizing network data using html 
+library(igraph) #Barebones network analysis package 
+
+g1<-graph_from_data_frame(d=edges,directed=TRUE) 
+
+gvis<-toVisNetworkData(g1)
+
+visNetwork(gvis$nodes, gvis$edges)
+```
