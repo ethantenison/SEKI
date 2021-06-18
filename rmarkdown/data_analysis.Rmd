@@ -7,7 +7,7 @@ output:
     toc: yes
     toc_float: yes
     toc_depth: 3
-    collapsed: no
+    collapsed: yes
     number_sections: yes
     fig_caption: yes
 always_allow_html: yes
@@ -27,6 +27,10 @@ library(fontawesome) #Icons
 
 library(visNetwork) #visualizing network data using html 
 library(igraph) #Barebones network analysis package 
+
+library(leaflet) #html/javascript mapping
+library(sf) #reading shapefiles 
+library(sp) #another package for spatial processing
 
 ```
 
@@ -199,5 +203,135 @@ network <-
 
 
 network 
+
+```
+
+# Ploting the boundaries 
+
+The raw shapefile includes nearly 1,500 different polygons, which make it unusable in the current state. 
+
+```{r firstmap}
+
+bg_raw <- st_read("data/external/SEKI_PACE.shp", stringsAsFactors = FALSE)
+bg_raw <-st_transform(bg_raw,"+proj=longlat +ellps=WGS84 +datum=WGS84")
+
+#I deselected the geometry column to I could easily analyze the data. It's computationally expensive otherwise.
+bg <-
+  bg_raw |> dplyr::select(
+    "Category",
+    "Own_Type",
+    "Own_Name"   ,
+    "Loc_Own"    ,
+    "Mang_Type"  ,
+    "Mang_Name" ,
+    "Loc_Mang" ,
+    "Des_Tp" ,
+    "Loc_Ds", 
+    "Unit_Nm"  ,
+    "Loc_Nm"
+  ) |> 
+  st_set_geometry(NULL)
+
+bg <- as.data.frame(bg)
+
+write.csv(bg, "data/interim/converted_shapefile.csv")
+
+#Quick visualization of the raw shapefile 
+leaflet() |> 
+  addTiles() |> 
+  addPolygons(data = bg_raw)
+
+```
+
+# Joining the polygons to the SEKI point data 
+
+The shapefile of SEKI jurisdictions is very messy. After repeated attempts to filter out unused polygons, it became clear that they are overlapping and broken up into pieces, making it difficult to look at regardless of the filtering. In addition, of those nodes that have lonlat values, the majority lie outside of the polygons.  
+
+```{r spatial_joining}
+
+
+
+#imputing avg long lat values to na's, to be changed later 
+avg_lat <- mean(nodes$centroid_lat, na.rm = TRUE)
+avg_lon <- mean(nodes$centroid_lon, na.rm = TRUE)
+
+nodes_sf <- nodes
+nodes_sf$centroid_lat[is.na(nodes_sf$centroid_lat)] <- avg_lat
+nodes_sf$centroid_lon[is.na(nodes_sf$centroid_lon)] <- avg_lon
+
+nodes_sf = st_as_sf(nodes_sf, coords = c("centroid_lon", "centroid_lat"), 
+                 crs = 4326, agr = "constant")
+
+#Quick viz of points
+leaflet() |> 
+  addTiles() |> 
+  addCircles(data = nodes_sf)
+
+#My attempts at filtering out polygons 
+bg <- bg_raw |> select("Loc_Mang", "Unit_Nm","GIS_Acres", "geometry")
+out <- st_intersection(bg, nodes_sf)
+gis_acres <- select(out, GIS_Acres)
+bg <- as.data.frame(bg)
+polygons <- gis_acres |> left_join(bg, by = "GIS_Acres") |> distinct()
+polygons <- polygons |> select("GIS_Acres",  "Loc_Mang",   "Unit_Nm","geometry.y") |> rename("geometry" = "geometry.y")
+polygons$geometry.x <- NULL
+
+polygons <- st_sf(polygons)
+#Quick viz of points
+leaflet() |> 
+  addTiles() |> 
+  addPolygons(data = bg_raw, label = bg_raw$Unit_Nm) |> 
+  addCircles(data = nodes_sf, fillColor = "red", color = "red", label = nodes_sf$id)
+
+
+```
+
+
+# Leaflet Map with ring of undefined points  
+
+
+```{r leaflet_with_ring}
+
+
+#Quick viz of points
+leaflet() |>
+  addTiles(urlTemplate = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png',
+           attribution = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors') |>
+  addCircles(
+    data = nodes_sf,
+    color = "red",
+    weight = nodes_sf$value,
+    label = nodes_sf$id
+  ) 
+
+
+#assigning ego and alter coordinates based on node info 
+coords <- nodes |>
+  select(id,centroid_lat,centroid_lon)
+
+edges <- joined |>
+  left_join(coords, by = c("ego" = "id")) |>
+  left_join(coords, by = c("alter" = "id")) |> 
+  dplyr::mutate(centroid_lat.y = replace_na(centroid_lat.y, avg_lat),
+                centroid_lon.y = replace_na(centroid_lon.y, avg_lon))
+
+edges <- data.frame(group = c(edges$ego, edges$alter),
+                    lat = c(edges$centroid_lat.x, edges$centroid_lat.y),
+                    lon = c(edges$centroid_lon.x, edges$centroid_lon.y)
+                    )
+
+
+#Quick viz of points
+leaflet() |>
+  addTiles(urlTemplate = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png',
+           attribution = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors') |>
+  addCircles(
+    data = nodes_sf,
+    color = "red",
+    weight = nodes_sf$value,
+    label = nodes_sf$id
+  ) |> 
+  addPolylines(data = edges, lng = ~lon, lat = ~lat, group = ~group)
+
 
 ```
