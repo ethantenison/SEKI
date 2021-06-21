@@ -331,7 +331,113 @@ leaflet() |>
     weight = nodes_sf$value,
     label = nodes_sf$id
   ) |> 
-  addPolylines(data = edges, lng = ~lon, lat = ~lat, group = ~group)
+  addPolylines(data = edges, lng = ~lon, lat = ~lat, group = ~group, weight = 1)
 
+
+```
+
+
+# Reassigning coords to nodes without lonlat values
+
+In order to show all of the organizations, even those without a physical address, I created a ring 
+
+```{r the_ring}
+
+for_ring <- nodes[is.na(nodes$centroid_lat),]
+
+number_of_orgs <- nrow(for_ring)
+
+outer_circle <- for_ring |> 
+  dplyr::mutate(centroid_lat = replace_na(centroid_lat, avg_lat),
+                centroid_lon = replace_na(centroid_lon, avg_lon)) |> 
+  dplyr::mutate(
+    x = cos((row_number() - 1) / number_of_orgs * 2 * pi),
+    y = sin((row_number() - 1) / number_of_orgs * 2 * pi)
+  ) |> 
+  dplyr::mutate(
+    new_lat = centroid_lat + y*1.5,
+    new_lon = centroid_lon + x*1.5
+  )
+
+outer_circle_toadd <- outer_circle |>
+  select(id, new_lon, new_lat) |> 
+  mutate(location = "Nonphysical")
+
+outer_circle = st_as_sf(outer_circle, coords = c("new_lon", "new_lat"), 
+                 crs = 4326, agr = "constant")
+
+leaflet() |>
+  addTiles(urlTemplate = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png',
+           attribution = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors') |>
+  addCircles(
+    data = outer_circle,
+    color = "red",
+    weight = outer_circle$value,
+    label = outer_circle$id
+  )
+
+
+  
+```
+
+# Adding the ring
+
+```{r ring_add}
+#Joining the ring with the physical location nodes
+
+original_value <- nodes_sf |> select(id, value)
+
+nodes_sf <- nodes |> 
+  left_join(outer_circle_toadd) |> 
+  mutate(
+    centroid_lon = ifelse(is.na(centroid_lon), new_lon, centroid_lon),
+    centroid_lat = ifelse(is.na(centroid_lat), new_lat, centroid_lat),
+    location = ifelse(is.na(location), "Physical", location),
+    value = value +10
+  )
+
+coords <- nodes_sf |>
+  select(id,centroid_lat,centroid_lon)
+nodes_sf= st_as_sf(nodes_sf, coords = c("centroid_lon", "centroid_lat"), 
+                 crs = 4326, agr = "constant")
+
+
+
+#assigning ego and alter coordinates based on node info 
+edges <- joined |>
+  left_join(coords, by = c("ego" = "id")) |>
+  left_join(coords, by = c("alter" = "id")) 
+
+edges <- data.frame(group = c(edges$ego, edges$alter),
+                    lat = c(edges$centroid_lat.x, edges$centroid_lat.y),
+                    lon = c(edges$centroid_lon.x, edges$centroid_lon.y)
+                    )
+
+
+
+#Assigning a palette 
+nodes_sf$location <- as.factor(nodes_sf$location)
+pal <- colorFactor(
+  palette = c('red', 'blue'),
+  domain = nodes_sf$location
+)
+
+
+#Leaflet map with ring added 
+
+
+leaflet(nodes_sf) |>
+  addTiles(urlTemplate = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png',
+           attribution = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors') |>
+  addCircles(
+    color = ~pal(nodes_sf$location),
+    weight = nodes_sf$value,
+    label = nodes_sf$id
+  ) |> 
+  addPolylines(data = edges, lng = ~lon, lat = ~lat, group = ~group, weight = 1) |> 
+  addLegend("bottomright",
+            pal = pal,
+            values = ~nodes_sf$location,
+            title = "")
 
 ```
