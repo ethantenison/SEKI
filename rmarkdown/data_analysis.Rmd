@@ -13,7 +13,6 @@ output:
 always_allow_html: yes
 editor_options:
   chunk_output_type: console
-runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
@@ -31,6 +30,7 @@ library(igraph) #Barebones network analysis package
 library(leaflet) #html/javascript mapping
 library(sf) #reading shapefiles 
 library(sp) #another package for spatial processing
+library(htmlwidgets) #for saving leaflet 
 
 ```
 
@@ -396,17 +396,21 @@ nodes_sf <- nodes |>
     value = value +10
   )
 
+write_rds(nodes_sf, "data/processed/nodes_4_shiny.rds")
+
 coords <- nodes_sf |>
   select(id,centroid_lat,centroid_lon)
 nodes_sf= st_as_sf(nodes_sf, coords = c("centroid_lon", "centroid_lat"), 
                  crs = 4326, agr = "constant")
 
-
+write_rds(coords, "data/processed/coords_4_shiny.rds")
 
 #assigning ego and alter coordinates based on node info 
 edges <- joined |>
   left_join(coords, by = c("ego" = "id")) |>
   left_join(coords, by = c("alter" = "id")) 
+
+write_rds(edges, "data/processed/edges_4_shiny.rds")
 
 edges <- data.frame(group = c(edges$ego, edges$alter),
                     lat = c(edges$centroid_lat.x, edges$centroid_lat.y),
@@ -426,9 +430,10 @@ pal <- colorFactor(
 #Leaflet map with ring added 
 
 
-leaflet(nodes_sf) |>
-  addTiles(urlTemplate = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png',
-           attribution = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors') |>
+m <- leaflet(nodes_sf) |>
+  # addTiles(urlTemplate = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png',
+  #          attribution = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors') |>
+  addProviderTiles(providers$OpenStreetMap.DE) |> 
   addCircles(
     color = ~pal(nodes_sf$location),
     weight = nodes_sf$value,
@@ -440,4 +445,6 @@ leaflet(nodes_sf) |>
             values = ~nodes_sf$location,
             title = "")
 
+
+saveWidget(m, file="reports/ring_map.html")
 ```
