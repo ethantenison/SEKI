@@ -212,7 +212,7 @@ The raw shapefile includes nearly 1,500 different polygons, which make it unusab
 
 ```{r firstmap}
 
-bg_raw <- st_read("data/external/SEKI_PACE.shp", stringsAsFactors = FALSE)
+bg_raw <- st_read("data/external/SEKI.shp", stringsAsFactors = FALSE)
 bg_raw <-st_transform(bg_raw,"+proj=longlat +ellps=WGS84 +datum=WGS84")
 
 #I deselected the geometry column to I could easily analyze the data. It's computationally expensive otherwise.
@@ -246,6 +246,8 @@ leaflet() |>
 # Joining the polygons to the SEKI point data 
 
 The shapefile of SEKI jurisdictions is very messy. After repeated attempts to filter out unused polygons, it became clear that they are overlapping and broken up into pieces, making it difficult to look at regardless of the filtering. In addition, of those nodes that have lonlat values, the majority lie outside of the polygons.  
+
+
 
 ```{r spatial_joining}
 
@@ -281,7 +283,7 @@ polygons <- st_sf(polygons)
 leaflet() |> 
   addTiles() |> 
   addPolygons(data = bg_raw, label = bg_raw$Unit_Nm) |> 
-  addCircles(data = nodes_sf, fillColor = "red", color = "red", label = nodes_sf$id)
+  addCircles(data = nodes_sf, fillColor = "red", color = "red", label = nodes_sf$id, weight = nodes_sf$value)
 
 
 ```
@@ -447,4 +449,49 @@ m <- leaflet(nodes_sf) |>
 
 
 saveWidget(m, file="reports/ring_map.html")
+
+```
+
+# Looking at other boundaries
+
+```{r other_boundaries}
+
+
+
+nf <- st_read("data/external/SEKI FS.shp", stringsAsFactors = FALSE)
+nf <-st_transform(nf,"+proj=longlat +ellps=WGS84 +datum=WGS84")
+
+np <- st_read("data/external/SEKI NP.shp", stringsAsFactors = FALSE)
+np <-st_transform(np,"+proj=longlat +ellps=WGS84 +datum=WGS84")
+
+combined <- bind_rows(nf, np)
+
+
+
+
+# nps_boundary <- st_read("data/external/nps_boundary.shp", stringsAsFactors = FALSE) all national parks 
+# nps_boundary <-st_transform(nps_boundary,"+proj=longlat +ellps=WGS84 +datum=WGS84")
+
+# S_USA.RangerDistrict<- st_read("data/external/S_USA.RangerDistrict.shp", stringsAsFactors = FALSE)
+# S_USA.RangerDistrict <-st_transform(S_USA.RangerDistrict,"+proj=longlat +ellps=WGS84 +datum=WGS84")
+
+
+
+
+# Sequoia NF
+# Sierra NF
+
+
+#Quick visualization of the raw shapefile 
+leaflet() |> 
+  addTiles() |> 
+  addPolygons(data = nf_districts,label = nf_districts$DISTRICTNA)
+
+
+leaflet() |> 
+  addTiles() |> 
+  addPolygons(data = combined)
+
+
+
 ```
